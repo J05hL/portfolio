@@ -1,0 +1,148 @@
+#outerNavDiv {
+  background-color: red;
+}
+
+
+.toggleButton {
+
+  position: absolute;
+  top: .75rem;
+  right: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+
+}
+
+
+.toggleButton .bar {
+
+  height: 3px;
+  width: 100%;
+  background-color: black;
+  border-radius: 10px;
+
+}
+
+#navBar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  align-items: flex-start;
+
+}
+
+#navLinks {
+  width: 100%;
+  display: none;
+  align-items: center;
+  height: 100%;
+
+}
+
+#navLinks.active {
+  display: flex;
+ 
+}
+#navLinks.active a{
+  justify-content: center;
+  display: flex;
+  color: black;
+  font-weight: 600;
+  text-decoration: none;
+  margin-bottom: 5px;
+}
+
+
+
+
+#navLinks ul {
+  padding: 0;
+  width: 100%;
+  flex-direction: column;
+}
+
+#navLinks li {
+  list-style: none;
+  text-align: center;
+}
+#navLinks li a{
+  color: black;
+  font-weight: 600;
+}
+
+#nav-logo {
+  display: flex;
+  height: 70px;
+}
+
+
+@media(min-width: 800px) {
+
+  
+  .toggleButton {
+
+    display: none;
+
+  }
+  #nav-logo {
+    display: flex;
+    align-items: center;
+    height: 70px;
+  }
+  #logo-container{
+    display: flex;
+    align-items: center;
+  }
+
+  #navBar {
+
+    flex-direction: row;
+    height: 80px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin: 0 20px 0 20px;
+
+  }
+
+  #logo-container {
+
+    height: 100%;
+  }
+
+
+
+  #navLinks li {
+
+    display: block;
+
+  }
+
+  #navLinks li a {
+    padding: 1rem;
+    display: block;
+    text-decoration: none;
+
+
+  }
+
+  #navLinks ul {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+  }
+
+  #innerNavDiv {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-bottom: 10px;
+  }
+
+
+}
+

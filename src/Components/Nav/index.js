@@ -15,13 +15,6 @@ export const Nav = () => {
       <div id='innerNavDiv'>
 
         <nav id='navBar'>
-          <div id="logo-container">
-            <img
-              id='nav-logo'
-              src=''
-              alt='this is a placeholder img'
-            />
-          </div>
 
           <a href='#' className='toggleButton' onClick={handleToggle}>
             <span className='bar' />

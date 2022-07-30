@@ -14,7 +14,6 @@ function App() {
     <div className="App">
 
       <Nav/>
-      Under Construction
       <Routes>
         <Route exact path="/" element={<Home/>}></Route>
         <Route path="/aboutme" element={<AboutMe/>}></Route>

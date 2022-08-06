@@ -1,5 +1,7 @@
 import './style.css'
 
+import {Link} from 'react-router-dom'
+
 import {useState} from 'react'
 
 export const Nav = () => {
@@ -16,26 +18,26 @@ export const Nav = () => {
 
         <nav id='navBar'>
 
-          <a href='#' className='toggleButton' onClick={handleToggle}>
+          <button href='#' className={'toggleButton'} onClick={handleToggle}>
             <span className='bar' />
 
             <span className="bar" />
 
             <span className="bar" />
-          </a>
+          </button>
 
           <div id="navLinks" className={isActive ? `active` : null}>
             <ul>
               <li>
-                <a href="/">Home</a>
+                <Link to="/">Home</Link>
               </li>
 
               <li>
-                <a href="/aboutme">About Me</a>
+                <Link to="/aboutme">About Me</Link>
               </li>
 
               <li>
-                <a href="/myprojects">My Projects</a>
+                <Link to="/myprojects">My Projects</Link>
               </li>
 
             </ul>

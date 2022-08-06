@@ -8,12 +8,18 @@ import {Nav} from '../Nav'
 import {Home} from '../Home'
 import {AboutMe} from '../AboutMe'
 import {MyProjects} from '../MyProjects'
+import { useEffect } from 'react';
 
 function App() {
+
+  useEffect(()=> {
+    return ()=> console.log(`app is unmounting`, Date())
+  }, [])
+
   return (
     <div className="App">
 
-      <Nav/>
+    <Nav/>
       <Routes>
         <Route exact path="/" element={<Home/>}></Route>
         <Route path="/aboutme" element={<AboutMe/>}></Route>

@@ -22,6 +22,48 @@
 }
 
 
+#MyProjects {
+  padding: 10px;
+  align-items: center;
+}
+
+#MyProjectsIntro {
+  padding: 10px;
+  align-items: center;
+}
+
+#MyProjectsMyProjectsCards {
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+  background-color: grey;
+}
+
+.defaultCard {
+  max-width: 25%;
+  max-height: 25%;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: left;
+  background-color: grey;
+}
+
+.imgCardContainer {
+  max-width: 25%;
+  max-height: 25%;
+  padding: 10px;
+
+
+}
+
+.imgCard {
+  max-width: 50%;
+  max-height: 50%;
+  border-radius: 20px;
+}
+
+
 @media(min-width: 800px) {
 
   #AboutMe {

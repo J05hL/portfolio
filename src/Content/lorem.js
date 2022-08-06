@@ -1,0 +1,3 @@
+const lorem = `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut quis mauris at libero fermentum faucibus. Nunc vel porta felis. Nunc sagittis justo at accumsan blandit. Donec sed lacinia lectus, at egestas sapien. Integer nec libero at leo varius interdum. Proin placerat molestie nisi in tempor. Quisque odio elit, egestas quis dapibus id, scelerisque non sem. Duis ultricies risus leo, sit amet cursus felis mattis ut. Nulla vitae maximus sem, et ultrices diam. Vivamus scelerisque viverra posuere.`
+
+export default lorem

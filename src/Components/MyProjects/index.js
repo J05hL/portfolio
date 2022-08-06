@@ -1,5 +1,7 @@
 import './style.css'
 
+import lorem from '../../Content/lorem';
+
 import {Card} from '../Card'
 import {Image} from '../Image'
 import {Text} from '../Text'
@@ -9,101 +11,102 @@ export const MyProjects = ()=> {
   return (
     <div id='MyProjects'>
 
-      <Card>
-
-        <Image
-          divId=''
-          divClassName='imgCard'
-          imageId=''
-          src='https://images.unsplash.com/photo-1598620617377-3bfb505b4384?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80'
-          alt=''
-          link='#'
-        />
-
+      <section id='MyProjectsIntro' >
         <Text
-          divId=''
-          className=''
-        >
+            divId=''
+            className=''
+          >
 
-          <Paragraph
-            id=''
-            text='testing'
+            <Paragraph
+              id=''
+              text={lorem}
+            />
+
+          </Text>
+      </section>
+
+      <div id='MyProjectsCards' >
+
+        <Card>
+
+          <Image
+            divId=''
+            divClassName='imgCardContainer'
+            imageId=''
+            imageClassName='imgCard'
+            src='https://images.unsplash.com/photo-1598620617377-3bfb505b4384?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80'
+            alt=''
+            link='#'
           />
 
-        </Text>
+          <Text
+            divId=''
+            className=''
+          >
 
-      </Card>
+            <Paragraph
+              id=''
+              text={lorem.slice(0,100)}
+            />
 
-        <Image
-          divId=''
-          divClassName='imgCard'
-          imageId=''
-          src='https://images.unsplash.com/photo-1598620617377-3bfb505b4384?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80'
-          alt=''
-          link='#'
-        />
+          </Text>
 
-        <Text
-          divId=''
-          className=''
-        >
+        </Card>
 
-          <Paragraph
-            id=''
-            text='testing 1'
+        <Card>
+
+          <Image
+            divId=''
+            divClassName='imgCardContainer'
+            imageId=''
+            imageClassName='imgCard'
+            src='https://images.unsplash.com/photo-1598620617377-3bfb505b4384?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80'
+            alt=''
+            link='#'
           />
 
-        </Text>
+          <Text
+            divId=''
+            className=''
+          >
 
-      <Card>
-        
-        <Image
-          divId=''
-          divClassName='imgCard'
-          imageId=''
-          src='https://images.unsplash.com/photo-1598620617377-3bfb505b4384?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80'
-          alt=''
-          link='#'
-        />
+            <Paragraph
+              id=''
+              text={lorem.slice(0,50)}
+            />
 
-        <Text
-          divId=''
-          className=''
-        >
+          </Text>
 
-          <Paragraph
-            id=''
-            text='testing 2'
+        </Card>
+
+        <Card>
+
+          <Image
+            divId=''
+            divClassName='imgCardContainer'
+            imageId=''
+            imageClassName='imgCard'
+            src='https://images.unsplash.com/photo-1598620617377-3bfb505b4384?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80'
+            alt=''
+            link='#'
           />
 
-        </Text>
+          <Text
+            divId=''
+            className=''
+          >
 
-      </Card>
+            <Paragraph
+              id=''
+              text={lorem.slice(0,75)}
+            />
 
-      <Card>
+          </Text>
 
-        <Image
-          divId=''
-          divClassName='imgCard'
-          imageId=''
-          src='https://images.unsplash.com/photo-1598620617377-3bfb505b4384?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80'
-          alt=''
-          link='#'
-        />
+        </Card>
 
-        <Text
-          divId=''
-          className=''
-        >
+      </div>
 
-          <Paragraph
-            id=''
-            text='testing 3'
-          />
-
-        </Text>
-
-      </Card>
     </div>
   )
 }

@@ -1,0 +1,19 @@
+#MyProjects {
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+
+
+
+@media(min-width: 800px) {
+
+  #MyProjects {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+}

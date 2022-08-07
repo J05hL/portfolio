@@ -20,7 +20,7 @@ export const AboutMe = ()=> {
 
       <Text id='textContainerAboutMe'>
 
-        <h2 id='aboutMeTitleAboutMe' className='pageTitle'>
+        <h2 id='aboutMeTitle' className='pageTitle'>
           {lorem.slice(0,17)}
         </h2>
 

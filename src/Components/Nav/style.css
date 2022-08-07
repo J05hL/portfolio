@@ -1,7 +1,6 @@
 #outerNavDiv {
-  background-color: red;
+  background-color: #342e37;
 }
-
 
 .toggleButton {
   position: absolute;
@@ -18,10 +17,18 @@
 
 }
 
-.toggleButton .bar {
+.toggleButton .barActive {
   height: 3px;
   width: 100%;
-  background-color: black;
+
+  background-color: #FAF9F6;
+  border-radius: 10px;
+}
+
+.toggleButton .barNotActive {
+  height: 3px;
+  width: 100%;
+  background-color: #342e37;
   border-radius: 10px;
 }
 
@@ -31,6 +38,7 @@
   justify-content: space-between;
   height: 100%;
   align-items: flex-start;
+  
 
 }
 
@@ -38,7 +46,7 @@
   width: 100%;
   display: none;
   align-items: center;
-  height: 100%;
+  height: 100%
 
 }
 
@@ -49,7 +57,7 @@
 #navLinks.active a{
   justify-content: center;
   display: flex;
-  color: black;
+  color: #FAF9F6;
   font-weight: 600;
   text-decoration: none;
   margin-bottom: 5px;
@@ -62,14 +70,15 @@
   padding: 0;
   width: 100%;
   flex-direction: column;
+  
 }
 
 #navLinks li {
   list-style: none;
   text-align: center;
 }
-#navLinks li a{
-  color: black;
+#navLinks li .navLink{
+  color: #FAF9F6;
   font-weight: 600;
 }
 

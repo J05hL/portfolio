@@ -18,26 +18,26 @@ export const Nav = () => {
 
         <nav id='navBar'>
 
-          <button href='#' className={'toggleButton'} onClick={handleToggle}>
-            <span className='bar' />
+          <a href='#' className={'toggleButton'} onClick={handleToggle}>
+            <span className={isActive ? `barActive` : `barNotActive`} />
 
-            <span className="bar" />
+            <span className={isActive ? `barActive` : `barNotActive`} />
 
-            <span className="bar" />
-          </button>
+            <span className={isActive ? `barActive` : `barNotActive`} />
+          </a>
 
           <div id="navLinks" className={isActive ? `active` : null}>
             <ul>
               <li>
-                <Link to="/">Home</Link>
+                <Link className='navLink' to="/">Home</Link>
               </li>
 
               <li>
-                <Link to="/aboutme">About Me</Link>
+                <Link className='navLink' to="/aboutme">About Me</Link>
               </li>
 
               <li>
-                <Link to="/myprojects">My Projects</Link>
+                <Link className='navLink' to="/myprojects">My Projects</Link>
               </li>
 
             </ul>

@@ -12,20 +12,22 @@ export const MyProjects = ()=> {
     <div id='MyProjects'>
 
       <section id='MyProjectsIntro' >
-        <Text
+        
+      <Text
             divId=''
             className=''
           >
 
             <Paragraph
               id=''
-              text={lorem}
+              text={lorem.slice(0,1000)}
             />
 
           </Text>
+
       </section>
 
-      <div id='MyProjectsCards' >
+      <section id='MyProjectsCards' >
 
         <Card>
 
@@ -72,7 +74,7 @@ export const MyProjects = ()=> {
 
             <Paragraph
               id=''
-              text={lorem.slice(0,50)}
+              text={lorem.slice(0,100)}
             />
 
           </Text>
@@ -98,14 +100,15 @@ export const MyProjects = ()=> {
 
             <Paragraph
               id=''
-              text={lorem.slice(0,75)}
+              text={lorem.slice(0,100)}
             />
 
           </Text>
 
         </Card>
+        
 
-      </div>
+      </section>
 
     </div>
   )

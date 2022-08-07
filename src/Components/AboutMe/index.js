@@ -27,7 +27,7 @@ export const AboutMe = ()=> {
         <Paragraph 
           id='aboutMeP1AboutMe' 
           className='aboutMeText'
-          text={lorem.slice(0,200)}  
+          text={lorem.slice(0,191)}  
         />
 
         <Paragraph 

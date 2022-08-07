@@ -17,7 +17,7 @@ export const MyProjects = ()=> {
 
           <Paragraph
             id=''
-            text={lorem.slice(0,1000)}
+            text={lorem.slice(0,191)}
           />
 
         </Text>
@@ -40,7 +40,7 @@ export const MyProjects = ()=> {
 
             <Paragraph
               id=''
-              text={lorem.slice(0,100)}
+              text={lorem.slice(0,17)}
             />
 
           </Text>
@@ -61,7 +61,7 @@ export const MyProjects = ()=> {
 
             <Paragraph
               id=''
-              text={lorem.slice(0,100)}
+              text={lorem.slice(0,17)}
             />
 
           </Text>
@@ -84,7 +84,7 @@ export const MyProjects = ()=> {
 
             <Paragraph
               id=''
-              text={lorem.slice(0,100)}
+              text={lorem.slice(0,17)}
             />
 
           </Text>

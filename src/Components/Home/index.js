@@ -1,5 +1,6 @@
 import './style.css'
 
+//dev only remove
 import lorem from '../../Content/lorem';
 
 import {Image} from '../Image'
@@ -25,9 +26,12 @@ export const Home = ()=> {
         </h2>
 
         <Paragraph
-          id=''
-          text={lorem.slice(0,500)}
-          />
+          text={lorem.slice(0,118)}
+        />
+
+        <Paragraph
+          text={lorem.slice(0,191)}
+        />
 
       </Text>    
 

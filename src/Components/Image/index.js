@@ -1,19 +1,29 @@
-import './style.css';
+/** @jsxImportSource @emotion/react */
+import { jsx } from '@emotion/react'
+import { css } from '@emotion/react'
 
-export const Image = ({divId, divClassName, imageId, imageClassName, src, alt, link})=> {
+import {ImageContainer} from '../ImageContainer'
+
+const style = css`
+  max-width: 95%;
+  max-height: 60%;
+  border-radius: 20px;
+  border: 1px solid;
+`
+
+export const Image = ({src, alt, link})=> {
 
   return (
 
-    <div id={divId} className={divClassName}>
+    <ImageContainer>
       {link? 
       <a href={link}>
-        <img id={imageId} className={imageClassName} src={src} alt={alt}/>
+        <img css={style} src={src} alt={alt}/>
       </a> :
-      
-      <img id={imageId} src={src} alt={alt}/>
+      <img css={style} src={src} alt={alt}/>
       }
 
-    </div>
+    </ImageContainer>
   
   )
 

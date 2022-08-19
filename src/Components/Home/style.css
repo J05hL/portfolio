@@ -1,4 +1,4 @@
-#Home {
+/* #Home {
   padding: 10px;
   display: flex;
   flex-direction: column;
@@ -6,7 +6,7 @@
   background-color: #FAF9F6;
 }
 
-#myImgHomeContainer {
+.myImgHomeContainer {
   padding: 10px;
   display: flex;
   flex-direction: column;
@@ -29,4 +29,4 @@
   }
 
 
-}
+} */

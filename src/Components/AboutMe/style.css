@@ -1,12 +1,12 @@
-#AboutMe {
+/* #AboutMe {
   padding: 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
   background-color: #FAF9F6;
-}
+} */
 
-#myImgContainerAboutMe {
+/* .myImgContainerAboutMe {
   padding: 10px;
   display: flex;
   flex-direction: column;
@@ -14,20 +14,20 @@
   max-width: 95%;
   max-height: 25%;
 
-}
+} */
 
-#myImgAboutMe {
+/* #myImgAboutMe {
   max-width: 95%;
   max-height: 95%;
   border-radius: 20px;
-}
+} */
 
 
-@media(min-width: 800px) {
+/* @media(min-width: 800px) {
 
   #AboutMe {
     flex-direction: row;
   }
 
 
-}
+} */

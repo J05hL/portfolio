@@ -1,24 +1,24 @@
-#MyProjects {
+/* #MyProjects {
   padding: 10px;
   align-items: center;
   background-color: #FAF9F6;
-}
+} */
 
-#MyProjectsIntro {
+/* #MyProjectsIntro {
   padding: 10px;
   align-items: center;
   background-color: #FAF9F6;
-}
+} */
 
-#MyProjectsCards {
+/* #MyProjectsCards {
   display: flex;
   flex-direction: column;
   justify-content: center;
   padding: 10px;
   background-color: #FAF9F6;
-}
+} */
 
-.defaultCard {
+/* .defaultCard {
   margin: 20px;
   border: 5px solid;
   border-color: white;
@@ -30,9 +30,9 @@
   box-shadow: 10px 10px 10px 10px rgba(0,0,0,0.2);
   background-color: #FAF9F6;
 
-}
+} */
 
-.imgCardContainer {
+/* .imgCardContainer {
   display:flex;
   justify-content: center;
   align-items: center;
@@ -41,45 +41,45 @@
   background-color: #FAF9F6;
 
 
-}
+} */
 
-.imgCard {
+/* .imgCard {
   max-height: 25%;
   max-width: 50%;
   box-shadow: 0 10px 10px 0 rgba(0,0,0,0.2);
   border-radius: 20px;
   background-color: #FAF9F6;
-}
+} */
 
 
 @media(min-width: 800px) {
 
-  #MyProjectsCards {
+  /* #MyProjectsCards {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
     position: absolute;
     bottom: 0;
     width: 100%;
-  }
+  } */
 
-  .defaultCard {
+  /* .defaultCard {
     width: 40%;
     flex-direction: column;
     align-items: center;
-  }
+  } */
 
-  .imgCardContainer {
+  /* .imgCardContainer {
     width: 50%;
     padding: 5px;
   
   
-  }
+  } */
 
-  .imgCard {
+  /* .imgCard {
     border: 1px solid;
     width: 50%;
     border-radius: 20px;
-  }
+  } */
 
 }

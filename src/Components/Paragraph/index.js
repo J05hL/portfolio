@@ -1,9 +1,16 @@
-import './style.css'
+/** @jsxImportSource @emotion/react */
+import { jsx } from '@emotion/react'
+import { css } from '@emotion/react'
 
-export const Paragraph = ({id, className, text})=> {
+const style = css`
+  padding: 20px;
+  text-align: justify;
+`
+
+export const Paragraph = ({text})=> {
 
   return (
-    <p id={id} className={className}>
+    <p css={style}>
       {text}
     </p>
   )

@@ -20,7 +20,6 @@
 .toggleButton .barActive {
   height: 3px;
   width: 100%;
-
   background-color: #FAF9F6;
   border-radius: 10px;
 }
@@ -95,6 +94,10 @@
     justify-content: center;
     display: flex;
     margin: 0 20px 0 20px;
+  }
+
+  #navLinks {
+    display: flex;
   }
 
   #navLinks li {

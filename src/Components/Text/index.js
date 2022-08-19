@@ -1,9 +1,15 @@
-import './style.css';
+/** @jsxImportSource @emotion/react */
+import { jsx } from '@emotion/react'
+import { css } from '@emotion/react'
 
-export const Text = ({divId, className, children})=> {
+const style = css`
+  backgroundColor: red
+`
+
+export const Text = ({children})=> {
 
   return (
-    <div id={divId} className={className ? className : 'defaultText'}>
+    <div css={style}>
       {children}
     </div>
   )

@@ -5,7 +5,6 @@ import {Image} from '../Image'
 import {Text} from '../Text'
 import {Paragraph} from '../Paragraph'
 import {MainContainer} from '../MainContainer'
-import {SubContainer} from '../SubContainer'
 import {Title} from '../Title'
 
 export const MyProjects = ()=> {

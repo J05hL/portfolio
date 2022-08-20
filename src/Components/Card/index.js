@@ -7,7 +7,8 @@ const style = css`
   border-color: white;
   padding: 5px;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  align-items: center; 
   max-height: 25%;
   max-width: 95%;
   box-shadow: 10px 10px 10px 10px rgba(0,0,0,0.2);

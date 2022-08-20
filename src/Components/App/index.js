@@ -13,6 +13,7 @@ import {AboutMe} from '../AboutMe'
 import {MyProjects} from '../MyProjects'
 import {Title} from '../Title'
 import {Footer} from '../Footer'
+import {Text} from '../Text'
 
 const style = css`
   display: flex;
@@ -30,10 +31,12 @@ function App() {
   return (
     <div css={style}>
       <Nav/>
-      <Title>
-        <h1>{h1}</h1>
-        <p>{description}</p>
-      </Title>
+      <Text>
+        <Title>
+          <h1>{h1}</h1>
+          <p>{description}</p>
+        </Title>
+      </Text>
       <Routes>
         <Route exact path="/" element={<Home/>}></Route>
         <Route path="/aboutme" element={<AboutMe/>}></Route>

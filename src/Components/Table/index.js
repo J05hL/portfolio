@@ -5,7 +5,6 @@ const outerTableDiv = css`
   display: flex;
   justify-content: center;
   color: #FAF9F6;
-
   padding: 20px;
 `
 
@@ -35,7 +34,7 @@ export const Table = ({array}) => {
                 key={index}
                 css={cell}
               >
-                {item}
+                {item.toUpperCase()}
               </th>)}
           </tr>
         </thead>
@@ -43,7 +42,6 @@ export const Table = ({array}) => {
           {array.map((item, index)=> 
             <tr 
               key={index}
-              css={cell}
             >
               {Object.values(item)
                 .map((x, i) => 

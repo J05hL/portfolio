@@ -2,7 +2,7 @@
 import { css } from '@emotion/react'
 
 const style = css`
-  ${'' /* background-color: red */}
+  padding: 10px;
 `
 
 export const Text = ({children})=> {

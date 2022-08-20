@@ -1,4 +1,8 @@
 import {lorem} from '../../Content/lorem';
+import {
+  myProjectsTitle,
+  myProjectsP1
+} from '../../Content/myProjects'
 
 import placeholder from '../../Images/placeholder.jpg'
 
@@ -24,11 +28,11 @@ export const MyProjects = ()=> {
         <Text>
 
           <Title>
-            <h2>{lorem.slice(0,17)}</h2>
+            <h2>{myProjectsTitle}</h2>
           </Title>
 
           <Paragraph
-            text={lorem.slice(0,762)}
+            text={myProjectsP1}
           />
 
         </Text>

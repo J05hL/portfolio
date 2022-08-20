@@ -1,9 +1,10 @@
 
 
 import {
-  aboutMeTitle,
-  aboutMeP1,
   bioTitle,
+  aboutMeP1,
+  aboutMeP2,
+  aboutMeP3,
   bioXP
 } from '../../Content/aboutMe'
 
@@ -33,18 +34,22 @@ export const AboutMe = ()=> {
         <Text>
 
           <Title>
-            <h2>{aboutMeTitle}</h2>
+            <h2>{bioTitle}</h2>
           </Title>
+
+          <Table array={bioXP}/>
 
           <Paragraph 
             text={aboutMeP1}  
           />
 
-          <Title>
-            <h2>{bioTitle}</h2>
-          </Title>
+          <Paragraph 
+            text={aboutMeP2}  
+          />
 
-          <Table array={bioXP}/>
+          <Paragraph 
+            text={aboutMeP3}  
+          />
 
         </Text>
       

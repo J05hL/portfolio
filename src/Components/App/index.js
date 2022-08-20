@@ -9,7 +9,7 @@ import {Home} from '../Home'
 import {AboutMe} from '../AboutMe'
 import {MyProjects} from '../MyProjects'
 import {Title} from '../Title'
-import {Footer} from '../Footer'
+// import {Footer} from '../Footer'
 
 
 
@@ -32,7 +32,7 @@ function App() {
         <Route path="/aboutme" element={<AboutMe/>}></Route>
         <Route path="/myprojects" element={<MyProjects/>}></Route>
       </Routes>
-      <Footer/>
+      {/* <Footer/> */}
     </div>
   );
 }

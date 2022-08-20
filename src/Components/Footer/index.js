@@ -1,5 +1,4 @@
 /** @jsxImportSource @emotion/react */
-import { jsx } from '@emotion/react'
 import { css } from '@emotion/react'
 
 
@@ -15,10 +14,14 @@ const style = css`
     }
 `
 
-export const Footer = ()=> {
-  <div css={style}>
 
-    <div>
+
+
+export const Footer = ()=> {
+  return (
+    <div css={style}>
+      
+      <div>
         Connect With Me
     </div>
 
@@ -38,5 +41,7 @@ export const Footer = ()=> {
 
       </ul>
     </div>
-  </div>
+
+    </div>
+  )
 }

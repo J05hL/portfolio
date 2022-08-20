@@ -10,9 +10,15 @@ import {Title} from '../Title'
 
 export const MyProjects = ()=> {
   return (
-    <MainContainer>
+    <MainContainer  
+    rowOnLarge={false}
+    wrap={false}
+    >
 
-      <SubContainer>
+      <MainContainer  
+        rowOnLarge={true}
+        wrap={false}
+        >
         
         <Text>
 
@@ -26,9 +32,12 @@ export const MyProjects = ()=> {
 
         </Text>
 
-      </SubContainer>
+      </MainContainer>
 
-      <SubContainer>
+      <MainContainer 
+         rowOnLarge={true}
+        wrap={true}
+        >
 
         <Card>
 
@@ -88,7 +97,7 @@ export const MyProjects = ()=> {
         </Card>
         
 
-      </SubContainer>
+      </MainContainer>
 
     </MainContainer>
   )

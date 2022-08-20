@@ -29,11 +29,11 @@ export const AboutMe = ()=> {
           </Title>
 
           <Paragraph 
-            text={lorem.slice(0,191)}  
+            text={lorem.slice(0,762)}  
           />
 
           <Paragraph 
-            text={lorem.slice(0,150)}
+            text={lorem.slice(0,253)}
           />
 
         </Text>

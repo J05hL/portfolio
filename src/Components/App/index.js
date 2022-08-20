@@ -1,3 +1,6 @@
+/** @jsxImportSource @emotion/react */
+import { css } from '@emotion/react'
+
 import { Route, Routes } from "react-router-dom";
 import { useEffect } from 'react';
 
@@ -9,9 +12,13 @@ import {Home} from '../Home'
 import {AboutMe} from '../AboutMe'
 import {MyProjects} from '../MyProjects'
 import {Title} from '../Title'
-// import {Footer} from '../Footer'
+import {Footer} from '../Footer'
 
-
+const style = css`
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+`
 
 function App() {
 
@@ -21,7 +28,7 @@ function App() {
   }, [])
 
   return (
-    <div className="App">
+    <div css={style}>
       <Nav/>
       <Title>
         <h1>{h1}</h1>
@@ -32,7 +39,7 @@ function App() {
         <Route path="/aboutme" element={<AboutMe/>}></Route>
         <Route path="/myprojects" element={<MyProjects/>}></Route>
       </Routes>
-      {/* <Footer/> */}
+      <Footer/>
     </div>
   );
 }

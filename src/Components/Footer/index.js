@@ -1,47 +1,53 @@
 /** @jsxImportSource @emotion/react */
-import { css } from '@emotion/react'
 
+import github from '../../Images/github_gray.png'
+import linkedIn from '../../Images/linkedin_gray.png'
 
-const style = css`
-    flex-direction: row;
-    height: 25%;
-    align-items: space-between;
-    justify-content: center;
-    display: flex;
-    margin: 0 20px 0 20px;
-    @media(min-width: 800px) {
-      align-items: center
-    }
-`
+import {
+  outerFooterDiv,
+  connect,
+  footerLinksContainer,
+  footerLinks,
+  image,
+  li
+} from './styled.js'
 
 
 
 
 export const Footer = ()=> {
   return (
-    <div css={style}>
+    <footer css={outerFooterDiv}>
       
-      <div>
-        Connect With Me
-    </div>
+      <div css={connect}>
+        Connect With Me:
+      </div>
 
-    <div id="footerLinks">
-      <ul>
-        <li>
-          <a className='footerLink' to="#">One</a>
+    <div css={footerLinksContainer}>
+      <ul css={footerLinks}>
+        <li css={li}>
+          <a href="https://github.com/J05hL" target="_blank" rel="noreferrer">
+            <img 
+              css={image} 
+              src={github}
+              alt='github logo'
+            />
+          </a>
         </li>
 
-        <li>
-          <a className='footerLink' href="#">Two</a>
-        </li>
-
-        <li>
-          <a className='footerLink' href="#">Three</a>
+        <li css={li}>
+          <a href="https://www.linkedin.com/in/-joshua-langford/" target="_blank" rel="noreferrer">
+            <img 
+              css={image}
+              src={linkedIn}
+              alt='linkedIn logo'
+            />
+          </a>
         </li>
 
       </ul>
     </div>
 
-    </div>
+    </footer>
   )
 }

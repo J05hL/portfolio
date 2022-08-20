@@ -26,7 +26,7 @@ export const MyProjects = ()=> {
           </Title>
 
           <Paragraph
-            text={lorem.slice(0,191)}
+            text={lorem.slice(0,762)}
           />
 
         </Text>

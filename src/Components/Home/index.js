@@ -28,11 +28,11 @@ export const Home = ()=> {
           </Title>
 
           <Paragraph
-            text={lorem.slice(0,118)}
+            text={lorem.slice(0,762)}
           />
 
           <Paragraph
-            text={lorem.slice(0,191)}
+            text={lorem.slice(0,762)}
           />
 
         </Text>   

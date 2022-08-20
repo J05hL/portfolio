@@ -11,8 +11,9 @@ const style = css`
   align-items: center; 
   max-height: 25%;
   max-width: 95%;
-  box-shadow: 10px 10px 10px 10px rgba(0,0,0,0.2);
-  background-color: #FAF9F6;
+  box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.2);
+  background-color: #342e37;
+  color: #FAF9F6;
   @media(min-width: 800px) {
     max-width: 40%;
   } 

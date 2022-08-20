@@ -50,7 +50,7 @@ export const MyProjects = ()=> {
           <Image
             src={item.image}
             alt={item.title}
-            link={true}
+            link={item.links[0].seeMore}
           />
           <Text>
             {item.text.map((x, i)=> 

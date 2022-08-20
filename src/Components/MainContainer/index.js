@@ -17,6 +17,7 @@ const rowNoWrap = css `
   align-items: center;
   background-color: #FAF9F6;
   @media(min-width: 800px) {
+    align-items: start;
     flex-direction: row;
   }
 `

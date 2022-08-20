@@ -19,7 +19,6 @@ const style = css `
   max-width: 40%;
   max-height: 25%;
   @media(min-width: 800px) {
-    width: 10px
     max-width: 20%;
     padding: 5px;
   }

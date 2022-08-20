@@ -1,6 +1,13 @@
 
 
-import {lorem} from '../../Content/lorem';
+import {
+  homeTitle, 
+  homeP1,
+  homeP2,
+  homeP3,
+  homeP4 } from '../../Content/home';
+
+import joshImage from '../../Images/josh_image.jpg'
 
 import {Image} from '../Image'
 import {Text} from '../Text'
@@ -17,22 +24,30 @@ export const Home = ()=> {
       >
 
         <Image
-          src='https://images.unsplash.com/photo-1598620617377-3bfb505b4384?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80'
+          src={joshImage}
           alt='this is a placeholder img'
           link={false}
         />
         
         <Text>
           <Title>
-            <h2>{lorem.slice(0,17)}</h2>
+            <h2>{homeTitle}</h2>
           </Title>
 
           <Paragraph
-            text={lorem.slice(0,762)}
+            text={homeP1}
           />
 
           <Paragraph
-            text={lorem.slice(0,762)}
+            text={homeP2}
+          />
+
+          <Paragraph
+            text={homeP3}
+          />
+
+          <Paragraph
+            text={homeP4}
           />
 
         </Text>   

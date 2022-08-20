@@ -4,8 +4,8 @@ import { css } from '@emotion/react'
 import {ImageContainer} from '../ImageContainer'
 
 const style = css`
-  max-width: 95%;
-  max-height: 60%;
+  max-width: 100%;
+  max-height: 100%;
   border-radius: 20px;
   border: 1px solid;
 `

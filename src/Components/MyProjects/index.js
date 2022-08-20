@@ -1,10 +1,8 @@
-import {lorem} from '../../Content/lorem';
 import {
   myProjectsTitle,
-  myProjectsP1
+  myProjectsP1,
+  projectsArray
 } from '../../Content/myProjects'
-
-import placeholder from '../../Images/placeholder.jpg'
 
 import {Card} from '../Card'
 import {Image} from '../Image'
@@ -44,62 +42,37 @@ export const MyProjects = ()=> {
         wrap={true}
         >
 
-        <Card>
-
+      {projectsArray.map((item, index)=>
+        <Card key={index}>
+          <Title>
+            {item.title}
+          </Title>
           <Image
-            src={placeholder}
-            alt=''
-            link='#'
+            src={item.image}
+            alt={item.title}
+            link={true}
           />
-
           <Text>
-
-            <Paragraph
-              id=''
-              text={lorem.slice(0,17)}
-            />
-
+            {item.text.map((x, i)=> 
+              <Paragraph
+                key={i}
+                text={x}
+              />
+            )}
+            {item.links.map((x, i)=>
+              <a 
+                key={i}
+                href={x.seeMore}
+              >
+                <p>{x.name}</p>
+              </a>
+            )}
           </Text>
+              
 
         </Card>
-
-        <Card>
-
-          <Image
-            src={placeholder}
-            alt=''
-            link='#'
-          />
-
-          <Text>
-
-            <Paragraph
-              id=''
-              text={lorem.slice(0,17)}
-            />
-
-          </Text>
-
-        </Card>
-
-        <Card>
-
-          <Image
-            src={placeholder}
-            alt=''
-            link='#'
-          />
-
-          <Text>
-
-            <Paragraph
-              id=''
-              text={lorem.slice(0,17)}
-            />
-
-          </Text>
-
-        </Card>
+      )}
+        
         
 
       </MainContainer>

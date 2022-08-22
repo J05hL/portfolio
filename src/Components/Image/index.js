@@ -11,12 +11,13 @@ const style = css`
 `
 
 export const Image = ({src, alt, link})=> {
-
+  console.log(`in the Image this is link >>`, link)
   return (
 
     <ImageContainer>
       {link? 
-      <a href={link}>
+      <a href={link} target="_blank" rel="noreferrer">
+      
         <img css={style} src={src} alt={alt}/>
       </a> :
       <img css={style} src={src} alt={alt}/>

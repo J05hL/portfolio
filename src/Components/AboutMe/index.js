@@ -39,6 +39,7 @@ export const AboutMe = ()=> {
 
           {aboutMeText.map((item, index)=> 
             <Paragraph 
+              key={index}
               text={item}  
             />)}
 

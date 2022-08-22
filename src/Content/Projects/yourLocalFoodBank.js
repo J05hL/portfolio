@@ -22,13 +22,16 @@ const ylfbTech = [
   `MongoDB`
 ]
 
+const deployed = `https://your-local-foodbank.netlify.app/`
+
 const ylfbLinks = [
-  {name: `frontend`, SeeMore: `https://github.com/SchoolOfCode/final-project_front-end-jazzy-code-superheros`},
-  {name: `backend`, SeeMore: `https://github.com/SchoolOfCode/final-project_back-end-jazzy-code-superheros`}
+  {name: `frontend`, link: `https://github.com/SchoolOfCode/final-project_front-end-jazzy-code-superheros`},
+  {name: `backend`, link: `https://github.com/SchoolOfCode/final-project_back-end-jazzy-code-superheros`}
 ]
 
 export const ylfb = {
   title: ylfbTitle,
+  deployed: deployed,
   text: ylfbText,
   tech: ylfbTech,
   links: ylfbLinks,

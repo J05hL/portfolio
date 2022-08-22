@@ -31,6 +31,7 @@ export const MyProjects = ()=> {
 
           {myProjectsText.map((item, index)=> 
             <Paragraph 
+              key={index}
               text={item}  
             />)}
 
@@ -51,7 +52,7 @@ export const MyProjects = ()=> {
           <Image
             src={item.image}
             alt={item.title}
-            link={item.links[0].seeMore}
+            link={item.deployed}
           />
           <Text>
             {item.text.map((x, i)=> 
@@ -63,7 +64,7 @@ export const MyProjects = ()=> {
             {item.links.map((x, i)=>
               <a 
                 key={i}
-                href={x.seeMore}
+                href={x.link}
               >
                 <p>{x.name}</p>
               </a>

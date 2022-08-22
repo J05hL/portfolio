@@ -24,13 +24,16 @@ const dummyTech = [
   lorem.slice(0,5),
 ]
 
+const deployed = `https://www.youtube.com/watch?v=dQw4w9WgXcQ`
+
 const dummyLinks = [
-  {name: lorem.slice(0,5), SeeMore: `#`},
-  {name: lorem.slice(0,5), SeeMore: `#`}
+  {name: lorem.slice(0,5), link: `#`},
+  {name: lorem.slice(0,5), link: `#`}
 ]
 
 export const dummy = {
   title: dummyTitle,
+  deployed: deployed,
   text: dummyText,
   tech: dummyTech,
   links: dummyLinks,

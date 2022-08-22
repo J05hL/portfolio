@@ -1,7 +1,8 @@
 /** @jsxImportSource @emotion/react */
 
-import github from '../../Images/github_gray.png'
-import linkedIn from '../../Images/linkedin_gray.png'
+import github from '../../Images/GitHubIcon.png'
+import linkedIn from '../../Images/LinkedInIcon.png'
+import email from '../../Images/EmailIcon.png'
 
 import {
   outerFooterDiv,
@@ -41,6 +42,16 @@ export const Footer = ()=> {
               css={image}
               src={linkedIn}
               alt='linkedIn logo'
+            />
+          </a>
+        </li>
+
+        <li css={li}>
+          <a href="mailto: josh.langford@hotmail.co.uk">
+            <img 
+              css={image}
+              src={email}
+              alt='email logo'
             />
           </a>
         </li>

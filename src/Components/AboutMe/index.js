@@ -2,9 +2,7 @@
 
 import {
   bioTitle,
-  aboutMeP1,
-  aboutMeP2,
-  aboutMeP3,
+  aboutMeText,
   bioXP
 } from '../../Content/aboutMe'
 
@@ -39,17 +37,10 @@ export const AboutMe = ()=> {
 
           <Table array={bioXP}/>
 
-          <Paragraph 
-            text={aboutMeP1}  
-          />
-
-          <Paragraph 
-            text={aboutMeP2}  
-          />
-
-          <Paragraph 
-            text={aboutMeP3}  
-          />
+          {aboutMeText.map((item, index)=> 
+            <Paragraph 
+              text={item}  
+            />)}
 
         </Text>
       

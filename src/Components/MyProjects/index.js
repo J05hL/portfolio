@@ -1,6 +1,6 @@
 import {
   myProjectsTitle,
-  myProjectsP1,
+  myProjectsText,
   projectsArray
 } from '../../Content/myProjects'
 
@@ -29,9 +29,10 @@ export const MyProjects = ()=> {
             <h2>{myProjectsTitle}</h2>
           </Title>
 
-          <Paragraph
-            text={myProjectsP1}
-          />
+          {myProjectsText.map((item, index)=> 
+            <Paragraph 
+              text={item}  
+            />)}
 
         </Text>
 

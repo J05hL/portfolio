@@ -2,9 +2,7 @@
 
 import {
   homeTitle, 
-  homeP1,
-  homeP2,
-  homeP3,
+  homeText,
   homeP4 } from '../../Content/home';
 
 import joshImage from '../../Images/josh_image.jpg'
@@ -34,21 +32,10 @@ export const Home = ()=> {
             <h2>{homeTitle}</h2>
           </Title>
 
-          <Paragraph
-            text={homeP1}
-          />
-
-          <Paragraph
-            text={homeP2}
-          />
-
-          <Paragraph
-            text={homeP3}
-          />
-
-          <Paragraph
-            text={homeP4}
-          />
+          {homeText.map((item, index)=> 
+            <Paragraph 
+              text={item}  
+            />)}
 
         </Text>   
 

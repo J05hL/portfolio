@@ -9,11 +9,12 @@ const style = css`
   display: flex;
   flex-direction: column;
   align-items: center; 
-  max-height: 25%;
-  max-width: 95%;
-  box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.2);
+  height: 25vh;
+  width: 80%;
   background-color: #342e37;
+  border-radius: 50px;
   color: #FAF9F6;
+  overflow-y: scroll; 
   @media(min-width: 800px) {
     max-width: 40%;
   } 

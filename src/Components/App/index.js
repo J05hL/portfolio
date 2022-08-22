@@ -15,6 +15,7 @@ import {Title} from '../Title'
 import {Footer} from '../Footer'
 import {Text} from '../Text'
 
+
 const style = css`
   display: flex;
   flex-direction: column;

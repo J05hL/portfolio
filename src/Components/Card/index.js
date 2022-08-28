@@ -12,7 +12,7 @@ const style = css`
   height: 25vh;
   width: 80%;
   background-color: #342e37;
-  border-radius: 50px;
+  ${'' /* border-radius: 50px; */}
   color: #FAF9F6;
   overflow-y: scroll; 
   @media(min-width: 800px) {

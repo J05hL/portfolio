@@ -81,7 +81,6 @@ export const linkActive = css `
   justify-content: center;
   display: flex;
   color: #FAF9F6;
-  font-weight: 600;
   text-decoration: none;
   margin-bottom: 5px;
   @media(min-width: 800px) {

@@ -5,7 +5,8 @@ import { css } from '@emotion/react'
 const style = css `
   text-align: center;
   font-weight: bolder;
-  font-size: 20px
+  font-size: 20px;
+  padding: 10px;
 `
 
 export const Title = ({children}) => {

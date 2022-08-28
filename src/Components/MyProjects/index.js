@@ -44,7 +44,7 @@ export const MyProjects = ()=> {
         wrap={true}
         >
 
-      {projectsArray.slice(0,3).map((item, index)=>
+      {projectsArray.map((item, index)=>
         <Card key={index}>
           <Title>
             {item.title}
@@ -61,6 +61,7 @@ export const MyProjects = ()=> {
                 text={x}
               />
             )}
+            <p>Have a closer look!</p>
             {item.links.map((x, i)=>
               <a 
                 key={i}

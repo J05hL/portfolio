@@ -43,15 +43,15 @@ export const Nav = () => {
           <div css={isActive ? navLinksActive : navLinks}>
             <ul css={navLinksUl}>
               <li css={li}>
-                <Link css={linkActive} to="/">Home</Link>
+                <Link css={linkActive} onClick={handleToggle} to="/">Home</Link>
               </li>
 
               <li css={li}>
-                <Link css={linkActive} to="/aboutme">About Me</Link>
+                <Link css={linkActive} onClick={handleToggle} to="/aboutme">About Me</Link>
               </li>
 
               <li css={li}>
-                <Link css={linkActive} to="/myprojects">My Projects</Link>
+                <Link css={linkActive} onClick={handleToggle} to="/myprojects">My Projects</Link>
               </li>
 
             </ul>

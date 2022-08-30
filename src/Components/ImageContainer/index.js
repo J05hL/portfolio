@@ -13,7 +13,7 @@ import { css } from '@emotion/react'
 //     padding: 5px;
 //   }
 // `
-const style = css `
+const normal = css `
   padding: 10px;
   align-items: center;
   max-width: 40%;
@@ -24,10 +24,20 @@ const style = css `
   }
 `
 
+const wide = css `
+  padding: 10px;
+  align-items: center;
+  width: 95%;
+  max-height: 25%;
+  @media(min-width: 800px) {
+    padding: 5px;
+  }
+`
+
 //bigImage ? bigImage : smallImage
 
-export const ImageContainer = ({children}) => {
-  return <div css={style}>
+export const ImageContainer = ({banner, children}) => {
+  return <div css={banner ? wide : normal}>
     {children}
   </div>
 }

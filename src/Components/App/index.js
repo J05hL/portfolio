@@ -16,33 +16,40 @@ import {Footer} from '../Footer'
 import {Text} from '../Text'
 
 
-const style = css`
+const all = css`
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  max-height: 100vh;
+`
+
+const scroll = css`
+overflow-y: scroll;
 `
 
 function App() {
 
-  //dev only remove
+  //dev only remove*
   useEffect(()=> {
     return ()=> console.log(`app is unmounting`, Date())
   }, [])
 
   return (
-    <div css={style}>
+    <div css={all}>
       <Nav/>
-      <Text>
-        <Title>
-          <h1>{h1}</h1>
-          <p>{description}</p>
-        </Title>
-      </Text>
-      <Routes>
-        <Route exact path="/" element={<Home/>}></Route>
-        <Route path="/aboutme" element={<AboutMe/>}></Route>
-        <Route path="/myprojects" element={<MyProjects/>}></Route>
-      </Routes>
+      <div css={scroll}>
+        <Text>
+          <Title>
+            <h1>{h1}</h1>
+            <p>{description}</p>
+          </Title>
+        </Text>
+        <Routes>
+          <Route exact path="/" element={<Home/>}></Route>
+          <Route path="/aboutme" element={<AboutMe/>}></Route>
+          <Route path="/myprojects" element={<MyProjects/>}></Route>
+        </Routes>
+      </div>
       <Footer/>
     </div>
   );

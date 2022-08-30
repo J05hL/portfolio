@@ -2,9 +2,10 @@ import { css } from '@emotion/react'
 
 export const outerNavDiv = css `
   background-color: #342e37;
+  box-shadow: 0px -3px 0px #FAF9F6 inset;
   
   @media(min-width: 800px) {
-    box-shadow: 0px -3px 0px #342e37 inset, 0px -6px 0px #FAF9F6 inset, 0px -9px 0px #342e37 inset, 0px -12px 0px #FAF9F6 inset;
+    box-shadow: 0px -3px 0px #FAF9F6 inset, 0px -6px 0px #342e37 inset, 0px -9px 0px #FAF9F6 inset, 0px -12px 0px #342e37 inset, 0px -15px 0px #FAF9F6 inset;
   }
  
 `

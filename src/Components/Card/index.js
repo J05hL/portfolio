@@ -9,15 +9,10 @@ const style = css`
   display: flex;
   flex-direction: column;
   align-items: center; 
-  height: 25vh;
   width: 80%;
   background-color: #342e37;
   ${'' /* border-radius: 50px; */}
   color: #FAF9F6;
-  overflow-y: scroll; 
-  @media(min-width: 800px) {
-    max-width: 40%;
-  } 
 `
 
 export const Card = ({children})=> {

@@ -40,7 +40,7 @@ export const MyProjects = ()=> {
       </MainContainer>
 
       <MainContainer 
-         rowOnLarge={true}
+         rowOnLarge={false}
         wrap={true}
         >
 

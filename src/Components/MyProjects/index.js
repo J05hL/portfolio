@@ -71,9 +71,6 @@ export const MyProjects = ()=> {
               rowOnLarge={true}
               wrap={true}
             >
-            
-              
-              {console.log(`item.tech >>>`, Date(), item.tech)}
               {item.tech.map((x, i)=> <span key={i}>
                 <Image
                   src={x.image}

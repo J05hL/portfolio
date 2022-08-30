@@ -9,12 +9,12 @@ import cypress from '../Images/TechIcons/cypress-icon.svg'
 
 
 export const tech = [
-  {name: `Javascript`, image: javascript},
-  {name: `React`, image: react},
-  {name: `Node.js`, image: nodejs},
-  {name: `Express`, image: express},
-  {name: `MongoDB`, image: mongodb},
-  {name: `Emotion`, image: emotion},
-  {name: `Jest`, image: jest},
-  {name: `Cypress`, image: cypress}
+  {name: `Javascript`, image: javascript, comfortable: true},
+  {name: `React`, image: react, comfortable: true},
+  {name: `Node.js`, image: nodejs, comfortable: true},
+  {name: `Express`, image: express, comfortable: true},
+  {name: `MongoDB`, image: mongodb, comfortable: false},
+  {name: `Emotion`, image: emotion, comfortable: true},
+  {name: `Jest`, image: jest, comfortable: true},
+  {name: `Cypress`, image: cypress, comfortable: true}
 ]

@@ -4,7 +4,7 @@ import {
   homeTitle, 
   homeText } from '../../Content/home';
 
-import joshImage from '../../Images/josh_image.jpg'
+  import joshImage from '../../Images/JoshImage.png'
 
 import {Image} from '../Image'
 import {Text} from '../Text'

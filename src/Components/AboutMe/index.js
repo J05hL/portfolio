@@ -8,7 +8,7 @@ import {
 
 import {tech} from '../../Content/tech.js'
 
-import joshImage from '../../Images/josh_image.jpg'
+import joshImage from '../../Images/JoshImage.png'
 
 import {Image} from '../Image'
 import {Text} from '../Text'

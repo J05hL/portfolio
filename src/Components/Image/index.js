@@ -4,10 +4,18 @@ import { css } from '@emotion/react'
 import {ImageContainer} from '../ImageContainer'
 
 const normal = css`
+  width: 400px;
+  height: 250px;
   max-width: 100%;
   max-height: 100%;
   border-radius: 20px;
   border: 1px solid;
+  @media(min-width: 800px) {
+    width: 800px;
+    height: 500px;
+    max-width: 100%;
+    max-height: 100%;
+  }
 `
 
 const wide = css`

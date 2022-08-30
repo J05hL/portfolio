@@ -20,7 +20,7 @@ const normal = css `
   max-height: 25%;
   @media(min-width: 800px) {
     max-width: 20%;
-    padding: 5px;
+    padding: 20px;
   }
 `
 
@@ -29,15 +29,19 @@ const wide = css `
   align-items: center;
   width: 95%;
   max-height: 25%;
-  @media(min-width: 800px) {
-    padding: 5px;
-  }
+`
+
+const small = css `
+  padding: 10px;
+  align-items: center;
+  width: 10%;
+  max-height: 10%;
 `
 
 //bigImage ? bigImage : smallImage
 
-export const ImageContainer = ({banner, children}) => {
-  return <div css={banner ? wide : normal}>
+export const ImageContainer = ({banner, children, tiny}) => {
+  return <div css={banner ? wide : tiny ? small : normal}>
     {children}
   </div>
 }

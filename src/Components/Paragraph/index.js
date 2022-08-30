@@ -2,7 +2,7 @@
 import { css } from '@emotion/react'
 
 const style = css`
-  padding: 20px;
+  padding: 10px;
   text-align: justify;
 `
 

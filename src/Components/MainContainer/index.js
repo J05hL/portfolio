@@ -7,7 +7,6 @@ const noRowNoWrap = css `
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #FAF9F6;
 `
 
 const rowNoWrap = css `
@@ -15,7 +14,6 @@ const rowNoWrap = css `
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #FAF9F6;
   @media(min-width: 800px) {
     align-items: start;
     flex-direction: row;
@@ -25,14 +23,9 @@ const rowNoWrap = css `
 const rowAndWrap = css `
   padding: 10px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: #FAF9F6;
-  @media(min-width: 800px) {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around
-  }
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
 `
 
 export const MainContainer = ({rowOnLarge, wrap, children}) => {

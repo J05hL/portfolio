@@ -62,6 +62,31 @@ export const MyProjects = ()=> {
                 text={x}
               />
             )}
+
+            <Title>
+              Tech we used
+            </Title>
+
+            <MainContainer
+              rowOnLarge={true}
+              wrap={true}
+            >
+            
+              
+              {console.log(`item.tech >>>`, Date(), item.tech)}
+              {item.tech.map((x, i)=> <span key={i}>
+                <Image
+                  src={x.image}
+                  alt={x.name}
+                  tiny={true}
+                />
+                <Paragraph
+                  text={x.name}
+                />
+              </span>)}
+
+
+            </MainContainer>
             <p>Have a closer look!</p>
             {item.links.map((x, i)=>
               <a 

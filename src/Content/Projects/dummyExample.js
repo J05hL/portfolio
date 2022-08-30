@@ -1,14 +1,14 @@
 import {lorem} from '../lorem'
-
 import dummyImage from '../../Images/placeholder.png'
+import {tech} from '../tech.js'
 
 const dummyTitle = lorem.slice(0,17)
 
-const dummyP1 = lorem.slice(0,91)
+const dummyP1 = lorem.slice(0,987)
 
-const dummyP2 =  lorem.slice(0,91)
+const dummyP2 =  lorem.slice(0,253)
 
-const dummyP3 =  lorem.slice(0,91)
+const dummyP3 =  lorem.slice(0,497)
 
 const dummyText = [
   dummyP1,
@@ -17,18 +17,15 @@ const dummyText = [
 ]
 
 const dummyTech = [
-  lorem.slice(0,5),
-  lorem.slice(0,5),
-  lorem.slice(0,5),
-  lorem.slice(0,5),
-  lorem.slice(0,5),
+  tech.filter((x)=> x.name.toLowerCase() === `javascript`)[0],
+  tech.filter((x)=> x.name.toLowerCase() === `javascript`)[0]
 ]
 
 const deployed = `https://www.youtube.com/watch?v=dQw4w9WgXcQ`
 
 const dummyLinks = [
-  {name: lorem.slice(0,5), link: `#`},
-  {name: lorem.slice(0,5), link: `#`}
+  {name: lorem.slice(0,53), link: deployed},
+  {name: lorem.slice(0,59), link: deployed}
 ]
 
 export const dummy = {

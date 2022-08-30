@@ -53,6 +53,7 @@ export const MyProjects = ()=> {
             src={item.image}
             alt={item.title}
             link={item.deployed}
+            banner={true}
           />
           <Text>
             {item.text.map((x, i)=> 

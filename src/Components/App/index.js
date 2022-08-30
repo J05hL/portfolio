@@ -24,7 +24,7 @@ const style = css`
 
 function App() {
 
-  //dev only remove
+  //dev only remove*
   useEffect(()=> {
     return ()=> console.log(`app is unmounting`, Date())
   }, [])

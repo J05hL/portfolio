@@ -1,6 +1,6 @@
 import {lorem} from '../lorem'
 
-import dummyImage from '../../Images/placeholder.jpg'
+import dummyImage from '../../Images/placeholder.png'
 
 const dummyTitle = lorem.slice(0,17)
 

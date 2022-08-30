@@ -28,7 +28,7 @@ const wide = css `
   padding: 10px;
   align-items: center;
   width: 95%;
-  height: 25%;
+  max-height: 25%;
   @media(min-width: 800px) {
     padding: 5px;
   }

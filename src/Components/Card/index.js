@@ -3,8 +3,8 @@ import { css } from '@emotion/react'
 
 const style = css`
   margin: 20px;
-  border: 5px solid;
-  border-color: white;
+  border: 2px solid #FAF9F6;
+  outline: 5px solid #342e37;
   padding: 5px;
   display: flex;
   flex-direction: column;

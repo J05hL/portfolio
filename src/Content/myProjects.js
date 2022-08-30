@@ -12,8 +12,5 @@ export const myProjectsText = [
 export const projectsArray = [ 
   ylfb, 
   dummy, 
-  dummy,
-  dummy,
-  dummy 
 ]
 

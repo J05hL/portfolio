@@ -1,18 +1,21 @@
-export const bioTitle = `Bio:`
+export const bioTitle = `Experience`
 
-const aboutMeP1 = `Before decided to change my career path I have always worked in areas requiring a strong focus on teamwork 
-and I plan to continue in this vein now I have taken the first steps towards a new career in tech.`
+const aboutMeP1 = `At the school of Code we worked in teams to deliver products and complete workshops to cement whatever we had learnt that day.
+It was a four month intensive boot camp studying full-stack web development. We covered HTML, CSS, JavaScript, TypeScript, PostgreSQL, TDD with Jest,
+Supertest and Cypress, React and Node.js with Express.`
 
-const aboutMeP2 = `I have always enjoyed problem solving and my first exposure to code was automating basic tasks within excel
-to simplify my work. Although it was never something I completely mastered I was able to streamline many of my tasks and I built quite a few 
-tools to make work for myself and my teams easier. This gave me a small glimspe of how powerful code can be.`
+const aboutMeP2 = `The course contained two larger projects. The first of these being a one week project in a team of four and the 
+second a one month project in a team of six. Both of 
+these projects were extremely fun and we were able to work in an Agile way to deliver products we were all proud of.`
 
-const aboutMeP3 = `I am a proud father of an amazing son and I want to demonstrate to him that you can achieve anything you set your mind to.
-When I'm not spending time with my family or improving on my newly acquired coding skills I am a keen gamer. I enjoy Path of Exile and Starcraft II,
-both games, but especially Starcraft, require a lot of reflection to iterate and improve and that is something I try to carry into every part of 
-my life.`
+const aboutMeP3 = `Before decided to change my career path I have always worked in areas requiring a strong focus on teamwork 
+and I plan to continue in this spirit now I have taken my first steps towards a new career in tech.`
 
-export const aboutMeText = [aboutMeP1, aboutMeP2, aboutMeP3]
+export const aboutMeText = [
+  aboutMeP1, 
+  aboutMeP2, 
+  aboutMeP3
+]
 
 export const bioXP = [
   {date:`2022`, title: `Software Developer`, company: `School of Code`},

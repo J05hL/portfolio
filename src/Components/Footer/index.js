@@ -46,16 +46,6 @@ export const Footer = ()=> {
           </a>
         </li>
 
-        <li css={li}>
-          <a href="mailto: josh.langford@hotmail.co.uk">
-            <img 
-              css={image}
-              src={email}
-              alt='email logo'
-            />
-          </a>
-        </li>
-
       </ul>
     </div>
 

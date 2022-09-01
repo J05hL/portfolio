@@ -2,7 +2,8 @@
 import { css } from '@emotion/react'
 
 import { Route, Routes } from "react-router-dom";
-import { useEffect } from 'react';
+  //dev only remove*
+  //import { useEffect } from 'react';
 
 import {h1} from '../../Content/appTitle'
 import {description} from '../../Content/appTitle'

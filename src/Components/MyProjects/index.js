@@ -97,7 +97,7 @@ export const MyProjects = ()=> {
                   <a 
                     css={style}
                     key={i}
-                    href={x.link}
+                    href={x.link} target="_blank" rel="noreferrer"
                   >
                     <p>{x.name}</p>
                   </a>

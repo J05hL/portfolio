@@ -27,7 +27,8 @@ const rowAndWrapAlways = css `
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
   background-color: inherit;
 `
 

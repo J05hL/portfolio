@@ -15,7 +15,7 @@ export const toggleButton = css `
   border: none;
   padding: 0;
   top: .75rem;
-  right: 1rem;
+  left: 1rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;

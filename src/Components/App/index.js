@@ -24,7 +24,8 @@ const all = css`
 `
 
 const scroll = css`
-overflow-y: scroll;
+  overflow-y: scroll;
+  padding: 0 30px;
 `
 
 function App() {

@@ -17,6 +17,7 @@ import github from '../Images/TechIcons/github-icon.svg'
 import styledcomponents from '../Images/TechIcons/styled-components-1.svg'
 import tailwindcss from '../Images/TechIcons/tailwindcss-icon.svg'
 
+export const findTechObjectByUpperCase = (name)=> tech.filter((x)=> x.name.toUpperCase() === name)[0]
 
 export const tech = [
   {name: `Git`, image: git, comfortable: true},

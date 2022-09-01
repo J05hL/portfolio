@@ -1,5 +1,7 @@
 import ylfbImage from '../../Images/your_local_foodbank.png'
-import {tech} from '../tech.js'
+import {
+  findTechObjectByUpperCase,
+} from '../tech.js'
 const ylfbTitle = `Your Local Foodbank`
 
 const ylfbP1 = `Your Local Foodbank was our final project for School of Code. As a team of six we decided to build an application that 
@@ -33,17 +35,15 @@ const ylfbText = [
   ylfbP5
 ]
 
-console.log(`content`, tech.filter((x)=> x.name.toLowerCase() === `javascript`))
-
 const ylfbTech = [
-  tech.filter((x)=> x.name.toLowerCase() === `javascript`)[0],
-  tech.filter((x)=> x.name.toLowerCase() === `react`)[0],
-  tech.filter((x)=> x.name.toLowerCase() === `node.js`)[0],
-  tech.filter((x)=> x.name.toLowerCase() === `express`)[0],
-  tech.filter((x)=> x.name.toLowerCase() === `mongodb`)[0],
-  tech.filter((x)=> x.name.toLowerCase() === `emotion`)[0],
-  tech.filter((x)=> x.name.toLowerCase() === `jest`)[0],
-  tech.filter((x)=> x.name.toLowerCase() === `cypress`)[0],
+  findTechObjectByUpperCase(`JAVASCRIPT`),
+  findTechObjectByUpperCase(`REACT`),
+  findTechObjectByUpperCase(`NODE.JS`),
+  findTechObjectByUpperCase(`EXPRESS`),
+  findTechObjectByUpperCase(`MONGODB`),
+  findTechObjectByUpperCase(`EMOTION`),
+  findTechObjectByUpperCase(`JEST`),
+  findTechObjectByUpperCase(`CYPRESS`),
 ]
 
 const deployed = `https://your-local-foodbank.netlify.app/`

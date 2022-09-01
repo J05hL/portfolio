@@ -1,6 +1,8 @@
 import {lorem} from '../lorem'
 import dummyImage from '../../Images/placeholder.png'
-import {tech} from '../tech.js'
+import {
+  findTechObjectByUpperCase
+} from '../tech.js'
 
 const dummyTitle = lorem.slice(0,17)
 
@@ -17,8 +19,7 @@ const dummyText = [
 ]
 
 const dummyTech = [
-  tech.filter((x)=> x.name.toLowerCase() === `javascript`)[0],
-  tech.filter((x)=> x.name.toLowerCase() === `javascript`)[0]
+  findTechObjectByUpperCase(`JAVASCRIPT`),
 ]
 
 const deployed = `https://www.youtube.com/watch?v=dQw4w9WgXcQ`

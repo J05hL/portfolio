@@ -32,13 +32,13 @@ export const Nav = () => {
 
         <nav css={navBar}>
 
-          <a href='#' css={toggleButton} onClick={handleToggle}>
+          <div css={toggleButton} onClick={handleToggle}>
             <span css={isActive ? barActive : barNotActive} />
 
             <span css={isActive ? barActive : barNotActive} />
 
             <span css={isActive ? barActive : barNotActive} />
-          </a>
+          </div>
 
           <div css={isActive ? navLinksActive : navLinks}>
             <ul css={navLinksUl}>

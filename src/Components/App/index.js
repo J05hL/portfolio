@@ -33,9 +33,9 @@ const scroll = css`
 function App() {
 
   //dev only remove*
-  useEffect(()=> {
-    return ()=> console.log(`app is unmounting`, Date())
-  }, [])
+  // useEffect(()=> {
+  //   return ()=> console.log(`app is unmounting`, Date())
+  // }, [])
 
   return (
     <div css={all}>

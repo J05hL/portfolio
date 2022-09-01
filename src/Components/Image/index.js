@@ -22,7 +22,7 @@ const small = css`
 `
 
 export const Image = ({src, alt, link, banner, tiny})=> {
-  console.log(`in the Image this is link >>`, link)
+
   return (
 
     <ImageContainer

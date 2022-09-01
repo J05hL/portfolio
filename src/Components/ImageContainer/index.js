@@ -14,13 +14,13 @@ import { css } from '@emotion/react'
 //   }
 // `
 const normal = css `
-  padding: 10px;
+  display: flex;
   align-items: center;
-  max-width: 40%;
-  max-height: 25%;
+  justify-content: center;
+  padding: 10px;
   @media(min-width: 800px) {
-    max-width: 20%;
-    padding: 20px;
+    min-width: 40vh;
+    min-height: 40vh;
   }
 `
 
@@ -32,10 +32,9 @@ const wide = css `
 `
 
 const small = css `
-  padding: 10px;
+  display: flex;
   align-items: center;
-  width: 10%;
-  max-height: 10%;
+  justify-content: center;
 `
 
 //bigImage ? bigImage : smallImage

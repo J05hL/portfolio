@@ -4,7 +4,7 @@ export const outerFooterDiv = css`
   display: flex;
   flex-direction: row;
   margin-top:auto; 
-  justify-content: space-between;
+  justify-content: center;
   width: 100%;
   background-color: #342e37;
   color: #FAF9F6;
@@ -14,23 +14,20 @@ export const outerFooterDiv = css`
   }
 `
 
-export const connect = css`
-  align-self: flex-end;
-  padding: 20px;
-`
-
 export const footerLinksContainer = css`
-  max-width: 80%;
-  min-width: 60%;
   padding-top: 16px;
 `
 
 export const footerLinks = css`
-  font-weight: 600;
+  padding-top: 16px;
   display:flex;
+  gap: 20px;
   flex-direction: row;
-  justify-content: space-between;  
-  max-width: 75%;
+  align-items: center; 
+  justify-content: space-between;
+  @media(min-width: 800px) {
+    gap: 40px;
+  }  
 `
 
 export const image = css`

@@ -21,11 +21,13 @@ const all = css`
   flex-direction: column;
   min-height: 100vh;
   max-height: 100vh;
+  background-color:  #FAF9F6;
 `
 
 const scroll = css`
   overflow-y: scroll;
   padding: 0 30px;
+  background-color: inherit;
 `
 
 function App() {

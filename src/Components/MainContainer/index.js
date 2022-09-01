@@ -7,6 +7,7 @@ const noRowNoWrap = css `
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: inherit;
 `
 
 const rowNoWrap = css `
@@ -14,6 +15,7 @@ const rowNoWrap = css `
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: inherit;
   @media(min-width: 800px) {
     align-items: start;
     flex-direction: row;
@@ -26,6 +28,7 @@ const rowAndWrap = css `
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
+  background-color: inherit;
 `
 
 export const MainContainer = ({rowOnLarge, wrap, children}) => {

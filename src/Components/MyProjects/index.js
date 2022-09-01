@@ -21,7 +21,7 @@ export const MyProjects = ()=> {
       <MainContainer  
         rowOnLarge={true}
         wrap={false}
-        >
+      >
         
         <Text>
 
@@ -39,29 +39,29 @@ export const MyProjects = ()=> {
 
       </MainContainer>
 
-      <MainContainer 
-         rowOnLarge={false}
-        wrap={true}
-        >
+        <MainContainer 
+          rowOnLarge={false}
+          wrap={true}
+          >
 
-      {projectsArray.map((item, index)=>
-        <Card key={index}>
-          <Title>
-            {item.title}
-          </Title>
-          <Image
-            src={item.image}
-            alt={item.title}
-            link={item.deployed}
-            banner={true}
-          />
-          <Text>
-            {item.text.map((x, i)=> 
-              <Paragraph
-                key={i}
-                text={x}
+          {projectsArray.map((item, index)=>
+            <Card key={index}>
+              <Title>
+                {item.title}
+              </Title>
+              <Image
+                src={item.image}
+                alt={item.title}
+                link={item.deployed}
+                banner={true}
               />
-            )}
+              <Text>
+                {item.text.map((x, i)=> 
+                  <Paragraph
+                    key={i}
+                    text={x}
+                  />
+                )}
 
             <Title>
               Tech we used
@@ -84,15 +84,15 @@ export const MyProjects = ()=> {
 
 
             </MainContainer>
-            <p>Have a closer look!</p>
-            {item.links.map((x, i)=>
-              <a 
-                key={i}
-                href={x.link}
-              >
-                <p>{x.name}</p>
-              </a>
-            )}
+              <p>Have a closer look!</p>
+                {item.links.map((x, i)=>
+                  <a 
+                    key={i}
+                    href={x.link}
+                  >
+                    <p>{x.name}</p>
+                  </a>
+              )}
           </Text>
               
 

@@ -7,6 +7,7 @@ const style = css `
   font-weight: bolder;
   font-size: 20px;
   padding: 10px;
+  background-color: inherit;
 `
 
 export const Title = ({children}) => {

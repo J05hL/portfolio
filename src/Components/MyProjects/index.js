@@ -1,3 +1,6 @@
+/** @jsxImportSource @emotion/react */
+import { css } from '@emotion/react'
+
 import {
   myProjectsTitle,
   myProjectsText,
@@ -10,6 +13,11 @@ import {Text} from '../Text'
 import {Paragraph} from '../Paragraph'
 import {MainContainer} from '../MainContainer'
 import {Title} from '../Title'
+
+const style = css`
+  color: inherit; 
+  text-decoration: underline;
+`
 
 export const MyProjects = ()=> {
   return (
@@ -87,6 +95,7 @@ export const MyProjects = ()=> {
               <p>Have a closer look!</p>
                 {item.links.map((x, i)=>
                   <a 
+                    css={style}
                     key={i}
                     href={x.link}
                   >

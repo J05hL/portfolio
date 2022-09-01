@@ -11,7 +11,7 @@ while delivering this product. We were able to interview a food bank manager whi
 
 const ylfbP2 = `Before we began any work we wrote a manifesto to agree how we would manage conflicts, manage our branching strategy on GitHub 
 and how we would work as a team, swapping partners daily to ensure knowledge was spread equally across the team. 
-The most important part of that manifesto was our to open and honest communication where we made sure everybody was free to express their 
+The most important part of that manifesto was our commitment to open and honest communication where we made sure everybody was free to express their 
 ideas without prejudice. We first used Miro and Figma to design out our wireframes as well as to plan our component tree and the structure of 
 our backend. 
 Once those plans were in place we starting breaking down those stories into tickets using Trello so we could properly manage the workload. `

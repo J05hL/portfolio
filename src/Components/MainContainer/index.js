@@ -10,7 +10,7 @@ const noRowNoWrap = css `
   background-color: inherit;
 `
 
-const rowNoWrap = css `
+const rowOnLargeNoWrap = css `
   padding: 10px;
   display: flex;
   flex-direction: column;
@@ -22,7 +22,7 @@ const rowNoWrap = css `
   }
 `
 
-const rowAndWrap = css `
+const rowAndWrapAlways = css `
   padding: 10px;
   display: flex;
   flex-direction: row;
@@ -32,7 +32,7 @@ const rowAndWrap = css `
 `
 
 export const MainContainer = ({rowOnLarge, wrap, children}) => {
-  return <div css={rowOnLarge && wrap ? rowAndWrap : rowOnLarge && !wrap ? rowNoWrap : noRowNoWrap}>
+  return <section css={rowOnLarge && wrap ? rowAndWrapAlways : rowOnLarge && !wrap ? rowOnLargeNoWrap : noRowNoWrap}>
     {children}
-  </div>
+  </section>
 }

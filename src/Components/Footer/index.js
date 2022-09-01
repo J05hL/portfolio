@@ -2,15 +2,12 @@
 
 import github from '../../Images/GitHubIcon.png'
 import linkedIn from '../../Images/LinkedInIcon.png'
-import email from '../../Images/EmailIcon.png'
 
 import {
   outerFooterDiv,
-  connect,
-  footerLinksContainer,
   footerLinks,
   image,
-  li
+  li,
 } from './styled.js'
 
 
@@ -20,35 +17,32 @@ export const Footer = ()=> {
   return (
     <footer css={outerFooterDiv}>
       
-      <div css={connect}>
-        Connect With Me:
-      </div>
+        <ul css={footerLinks}>
 
-    <div css={footerLinksContainer}>
-      <ul css={footerLinks}>
-        <li css={li}>
-          <a href="https://github.com/J05hL" target="_blank" rel="noreferrer">
-            <img 
-              css={image} 
-              src={github}
-              alt='github logo'
-            />
-          </a>
-        </li>
+          <li css={li}>
+            Where to find me
+          </li>
+          <li css={li}>
+            <a href="https://github.com/J05hL" target="_blank" rel="noreferrer">
+              <img 
+                css={image} 
+                src={github}
+                alt='github logo'
+              />
+            </a>
+          </li>
 
-        <li css={li}>
-          <a href="https://www.linkedin.com/in/-joshua-langford/" target="_blank" rel="noreferrer">
-            <img 
-              css={image}
-              src={linkedIn}
-              alt='linkedIn logo'
-            />
-          </a>
-        </li>
+          <li css={li}>
+            <a href="https://www.linkedin.com/in/-joshua-langford/" target="_blank" rel="noreferrer">
+              <img 
+                css={image}
+                src={linkedIn}
+                alt='linkedIn logo'
+              />
+            </a>
+          </li>
 
-      </ul>
-    </div>
-
+        </ul>
     </footer>
   )
 }

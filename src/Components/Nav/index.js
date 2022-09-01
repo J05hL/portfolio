@@ -47,7 +47,7 @@ export const Nav = () => {
               </li>
 
               <li css={li}>
-                <Link css={linkActive} onClick={handleToggle} to="/aboutme">About Me</Link>
+                <Link css={linkActive} onClick={handleToggle} to="/experience">Experience</Link>
               </li>
 
               <li css={li}>

@@ -9,7 +9,7 @@ import {description} from '../../Content/appTitle'
 
 import {Nav} from '../Nav' 
 import {Home} from '../Home'
-import {AboutMe} from '../AboutMe'
+import {Experience} from '../Experience'
 import {MyProjects} from '../MyProjects'
 import {Title} from '../Title'
 import {Footer} from '../Footer'
@@ -40,7 +40,7 @@ function App() {
   return (
     <div css={all}>
       <Nav/>
-      <div css={scroll}>
+      <section css={scroll}>
         <Text>
           <Title>
             <h1>{h1}</h1>
@@ -49,10 +49,10 @@ function App() {
         </Text>
         <Routes>
           <Route exact path="/" element={<Home/>}></Route>
-          <Route path="/aboutme" element={<AboutMe/>}></Route>
+          <Route path="/experience" element={<Experience/>}></Route>
           <Route path="/myprojects" element={<MyProjects/>}></Route>
         </Routes>
-      </div>
+      </section>
       <Footer/>
     </div>
   );

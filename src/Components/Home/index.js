@@ -23,7 +23,7 @@ export const Home = ()=> {
         <Image
           src={joshImage}
           alt='this is a placeholder img'
-          link={false}
+          link={false}  
         />
         
         <Text>

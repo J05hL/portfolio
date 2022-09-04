@@ -7,6 +7,7 @@ import { Route, Routes } from "react-router-dom";
 
 import {h1} from '../../Content/appTitle'
 import {description} from '../../Content/appTitle'
+import joshImage from '../../Images/JoshImage.png'
 
 import {Nav} from '../Nav' 
 import {Home} from '../Home'
@@ -15,6 +16,7 @@ import {MyProjects} from '../MyProjects'
 import {Title} from '../Title'
 import {Footer} from '../Footer'
 import {Text} from '../Text'
+import {Image} from '../Image'
 
 
 const all = css`
@@ -41,6 +43,12 @@ function App() {
   return (
     <div css={all}>
       <Nav/>
+      <Image
+          src={joshImage}
+          alt='this is an image of me'
+          link={false}
+          fix={true}
+        />
       <section css={scroll}>
         <Text>
           <Title>

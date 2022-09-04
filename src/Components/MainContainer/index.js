@@ -16,7 +16,7 @@ const rowOnLargeNoWrap = css `
   flex-direction: column;
   align-items: center;
   background-color: inherit;
-  @media(min-width: 1000px) {
+  @media(min-width: 1100px) {
     align-items: flex-start;
     flex-direction: row;
   }

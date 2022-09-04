@@ -16,7 +16,19 @@ import { css } from '@emotion/react'
 
 const fixed = css `
   display: none;
-  @media(min-width: 800px) {
+  @media(min-width: 1000px) and (max-height: 650px) {
+    position: fixed;
+    top: 25vh;
+    left: 1vh;
+    width: 40vh; 
+    height: 40vh;  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    background-color: inherit;
+  }
+  @media(min-width: 1000px) {
     position: fixed;
     top: 25vh;
     width: 40vh; 

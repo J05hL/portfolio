@@ -17,7 +17,7 @@ const normal = css`
   height: auto;
   border-radius: 20px;
   border: 1px solid;
-  @media(min-width: 800px) {
+  @media(min-width: 1000px) {
     display: none;
   }
 `

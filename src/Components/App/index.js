@@ -43,12 +43,6 @@ function App() {
   return (
     <div css={all}>
       <Nav/>
-      <Image
-          src={joshImage}
-          alt='this is an image of me'
-          link={false}
-          fix={true}
-        />
       <section css={scroll}>
         <Text>
           <Title>

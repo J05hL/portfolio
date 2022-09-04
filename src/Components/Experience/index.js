@@ -18,75 +18,83 @@ import { Table } from '../Table'
 export const Experience = ()=> {
 
   return (   
-
-    <MainContainer rowOnLarge={true}
-    wrap={false}
-    >
-
+    <>
       <Image
-        src={joshImage}
-        alt='Joshua Langford image'
-        link={false}
+      src={joshImage}
+      alt='this is an image of me'
+      link={false}
+      fix={true}
       />
 
-      <Text>
+      <MainContainer rowOnLarge={true}
+      wrap={false}
+      >
 
-        <Title>
-          <h2>{xpTitle}</h2>
-        </Title>
+        <Image
+          src={joshImage}
+          alt='Joshua Langford image'
+          link={false}
+        />
 
-        {xpText.map((item, index)=> 
-            <Paragraph 
-              key={index}
-              text={item}  
-            />)}
+        <Text>
 
-        <Title>Tech I'm comfortable with</Title>
+          <Title>
+            <h2>{xpTitle}</h2>
+          </Title>
 
-        <MainContainer
-          rowOnLarge={true}
-          wrap={true}
-        >
+          {xpText.map((item, index)=> 
+              <Paragraph 
+                key={index}
+                text={item}  
+              />)}
+
+          <Title>Tech I'm comfortable with</Title>
+
+          <MainContainer
+            rowOnLarge={true}
+            wrap={true}
+          >
+            
+            {tech.filter((x)=> x.comfortable).map((x, i)=> <span key={i}>
+                  <Image
+                    src={x.image}
+                    alt={x.name}
+                    tiny={true}
+                  />
+                  <Paragraph
+                    text={x.name}
+                  />
+                  </span>)}
+          </MainContainer>
+
+          <Title>Tech I'm exploring right now</Title>
           
-          {tech.filter((x)=> x.comfortable).map((x, i)=> <span key={i}>
-                <Image
-                  src={x.image}
-                  alt={x.name}
-                  tiny={true}
-                />
-                <Paragraph
-                  text={x.name}
-                />
-                </span>)}
-        </MainContainer>
+          <MainContainer
+            rowOnLarge={true}
+            wrap={true}
+          >
+            
+            {tech.filter((x)=> !x.comfortable).map((x, i)=> <span key={i}>
+                  <Image
+                    src={x.image}
+                    alt={x.name}
+                    tiny={true}
+                  />
+                  <Paragraph
+                    text={x.name}
+                  />
+                  </span>)}
+          </MainContainer>
 
-        <Title>Tech I'm exploring right now</Title>
+          <Title>Employment History</Title>
+
+          <Table array={xpHistory}/>
+
+        </Text>
+
+
         
-        <MainContainer
-          rowOnLarge={true}
-          wrap={true}
-        >
-          
-          {tech.filter((x)=> !x.comfortable).map((x, i)=> <span key={i}>
-                <Image
-                  src={x.image}
-                  alt={x.name}
-                  tiny={true}
-                />
-                <Paragraph
-                  text={x.name}
-                />
-                </span>)}
-        </MainContainer>
-
-        <Title>Employment History</Title>
-
-        <Table array={xpHistory}/>
-
-      </Text>
-
-
-      
-    </MainContainer>
+      </MainContainer>
+    </>  
   )
 }

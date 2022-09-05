@@ -13,6 +13,36 @@ import { css } from '@emotion/react'
 //     padding: 5px;
 //   }
 // `
+
+const fixed = css `
+  display: none;
+  @media(min-width: 1100px) and (max-height: 650px) {
+    position: fixed;
+    top: 25vh;
+    left: 1vh;
+    width: 40vh; 
+    height: 40vh;  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    background-color: inherit;
+  }
+  @media(min-width: 1100px) {
+    position: fixed;
+    top: 25vh;
+    width: 40vh; 
+    height: 40vh;  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    background-color: inherit;
+  }
+  
+`
+
+
 const normal = css `
   display: flex;
   align-items: center;
@@ -42,8 +72,8 @@ const small = css `
 
 //bigImage ? bigImage : smallImage
 
-export const ImageContainer = ({banner, children, tiny}) => {
-  return <div css={banner ? wide : tiny ? small : normal}>
+export const ImageContainer = ({banner, children, tiny, fix}) => {
+  return <div css={fix ? fixed : banner ? wide : tiny ? small : normal}>
     {children}
   </div>
 }

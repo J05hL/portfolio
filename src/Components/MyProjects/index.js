@@ -8,11 +8,6 @@ import {
 } from '../../Content/myProjects'
 
 import {Card} from '../Card'
-import {Image} from '../Image'
-import {Text} from '../Text'
-import {Paragraph} from '../Paragraph'
-import {MainContainer} from '../MainContainer'
-import {Title} from '../Title'
 
 const style = css`
   color: inherit; 
@@ -21,77 +16,43 @@ const style = css`
 
 export const MyProjects = ()=> {
   return (
-    <MainContainer  
-    rowOnLarge={false}
-    wrap={false}
-    >
+    <section>
 
-      <MainContainer  
-        rowOnLarge={true}
-        wrap={false}
-      >
-        
-        <Text>
 
-          <Title>
             <h2>{myProjectsTitle}</h2>
-          </Title>
 
           {myProjectsText.map((item, index)=> 
-            <Paragraph 
-              key={index}
-              text={item}  
-            />)}
-
-        </Text>
-
-      </MainContainer>
-
-        <MainContainer 
-          rowOnLarge={false}
-          wrap={true}
-          >
+            <p key={index}>{item}</p>  
+            )}
 
           {projectsArray.map((item, index)=>
             <Card key={index}>
-              <Title>
+              <h4>
                 {item.title}
-              </Title>
-              <Image
-                src={item.image}
-                alt={item.title}
-                link={item.deployed}
-                banner={true}
-              />
-              <Text>
+              </h4>
+              <a href={item.deployed} target="_blank" rel="noreferrer">
+                <img
+                  src={item.image}
+                  alt={item.title}
+                />
+              </a>
                 {item.text.map((x, i)=> 
-                  <Paragraph
-                    key={i}
-                    text={x}
-                  />
+                  <p key={i}>{x}</p>
                 )}
 
-            <Title>
+            <h5>
               Tech we used
-            </Title>
+            </h5>
 
-            <MainContainer
-              rowOnLarge={true}
-              wrap={true}
-            >
               {item.tech.map((x, i)=> <span key={i}>
-                <Image
+                <img
                   src={x.image}
                   alt={x.name}
-                  tiny={true}
                 />
-                <Paragraph
-                  text={x.name}
-                />
+                <p>text={x.name}</p>
+                  
               </span>)}
 
-
-            </MainContainer>
               <p>Have a closer look!</p>
                 {item.links.map((x, i)=>
                   <a 
@@ -101,17 +62,11 @@ export const MyProjects = ()=> {
                   >
                     <p>{x.name}</p>
                   </a>
-              )}
-          </Text>
-              
+              )}             
 
         </Card>
       )}
-        
-        
 
-      </MainContainer>
-
-    </MainContainer>
+    </section>
   )
 }

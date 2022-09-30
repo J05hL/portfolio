@@ -6,95 +6,45 @@ import {
 
 import {tech} from '../../Content/tech.js'
 
-import joshImage from '../../Images/JoshImage.png'
-
-import {Image} from '../Image'
-import {Text} from '../Text'
-import {Paragraph} from '../Paragraph'
-import { MainContainer } from '../MainContainer'
-import { Title } from '../Title'
 import { Table } from '../Table'
 
 export const Experience = ()=> {
 
   return (   
-    <>
-      <Image
-      src={joshImage}
-      alt='this is an image of me'
-      link={false}
-      fix={true}
-      />
-
-      <MainContainer rowOnLarge={true}
-      wrap={false}
-      >
-
-        <Image
-          src={joshImage}
-          alt='Joshua Langford image'
-          link={false}
-        />
-
-        <Text>
-
-          <Title>
-            <h2>{xpTitle}</h2>
-          </Title>
-
-          {xpText.map((item, index)=> 
-              <Paragraph 
-                key={index}
-                text={item}  
-              />)}
-
-          <Title>Tech I'm comfortable with</Title>
-
-          <MainContainer
-            rowOnLarge={true}
-            wrap={true}
-          >
-            
-            {tech.filter((x)=> x.comfortable).map((x, i)=> <span key={i}>
-                  <Image
-                    src={x.image}
-                    alt={x.name}
-                    tiny={true}
-                  />
-                  <Paragraph
-                    text={x.name}
-                  />
-                  </span>)}
-          </MainContainer>
-
-          <Title>Tech I'm exploring right now</Title>
-          
-          <MainContainer
-            rowOnLarge={true}
-            wrap={true}
-          >
-            
-            {tech.filter((x)=> !x.comfortable).map((x, i)=> <span key={i}>
-                  <Image
-                    src={x.image}
-                    alt={x.name}
-                    tiny={true}
-                  />
-                  <Paragraph
-                    text={x.name}
-                  />
-                  </span>)}
-          </MainContainer>
-
-          <Title>Employment History</Title>
-
-          <Table array={xpHistory}/>
-
-        </Text>
+    <section>
+        <h2>{xpTitle}</h2>
 
 
+      {xpText.map((item, index)=> 
+          <p key={index}>{item} </p> 
+      )}
+
+      <h3>Tech I'm comfortable with</h3>
         
-      </MainContainer>
-    </>  
+        {tech.filter((x)=> x.comfortable).map((x, i)=> <span key={i}>
+              <img
+                src={x.image}
+                alt={x.name}
+              />
+              <p>{x.name}</p>
+              </span>)}
+
+      <h4>Tech I'm exploring right now</h4>
+    
+        
+        {tech.filter((x)=> !x.comfortable).map((x, i)=> <span key={i}>
+              <img
+                src={x.image}
+                alt={x.name}
+              />
+              <p>
+                text={x.name}
+              </p>
+              </span>)}
+
+      <h3>Employment History</h3>
+
+      <Table array={xpHistory}/>
+    </section>  
   )
 }

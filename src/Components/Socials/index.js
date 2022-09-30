@@ -3,39 +3,30 @@
 import github from '../../Images/GitHubIcon.png'
 import linkedIn from '../../Images/LinkedInIcon.png'
 
-import {
-  outerFooterDiv,
-  footerLinks,
-  image,
-  li,
-} from './styled.js'
 
-
-
-
-export const Footer = ()=> {
+export const Socials = ()=> {
   return (
-    <footer css={outerFooterDiv}>
+    <section css={null}>
       
-        <ul css={footerLinks}>
+        <ul css={null}>
 
-          <li css={li}>
+          <li css={null}>
             Where to find me
           </li>
-          <li css={li}>
+          <li css={null}>
             <a href="https://github.com/J05hL" target="_blank" rel="noreferrer">
               <img 
-                css={image} 
+                css={null} 
                 src={github}
                 alt='github logo'
               />
             </a>
           </li>
 
-          <li css={li}>
+          <li css={null}>
             <a href="https://www.linkedin.com/in/-joshua-langford/" target="_blank" rel="noreferrer">
               <img 
-                css={image}
+                css={null}
                 src={linkedIn}
                 alt='linkedIn logo'
               />
@@ -43,6 +34,6 @@ export const Footer = ()=> {
           </li>
 
         </ul>
-    </footer>
+    </section>
   )
 }

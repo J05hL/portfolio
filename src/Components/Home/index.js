@@ -1,51 +1,15 @@
-
-
 import {
   homeTitle, 
   homeText } from '../../Content/home';
 
-  import joshImage from '../../Images/JoshImage.png'
-
-import {Image} from '../Image'
-import {Text} from '../Text'
-import {Paragraph} from '../Paragraph'
-import { Title } from '../Title';
-import { MainContainer } from '../MainContainer';
-
 export const Home = ()=> {
   return (
-    <>
-      <Image
-      src={joshImage}
-      alt='this is an image of me'
-      link={false}
-      fix={true}
-      />
-      <MainContainer 
-        rowOnLarge={true}
-        wrap={false}
-        >
+    <section>
+      <h2>{homeTitle}</h2>
 
-          <Image
-            src={joshImage}
-            alt='this is a placeholder img'
-            link={false}  
-          />
-          
-          <Text>
-            <Title>
-              <h2>{homeTitle}</h2>
-            </Title>
 
-            {homeText.map((item, index)=> 
-              <Paragraph 
-                key={index}
-                text={item}  
-              />)}
-
-          </Text>   
-
-      </MainContainer>
-    </>
+      {homeText.map((item, index)=> 
+        <p key={index}>text={item}</p>)}
+    </section>
   )
 }

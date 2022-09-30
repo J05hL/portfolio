@@ -11,9 +11,9 @@ export const EmptyModal = ({ buttonTitle, modalTitle, children }) => {
 			<Button onClick={onOpen} mb={3}>
 				{buttonTitle}
 			</Button>
-			<Modal isOpen={isOpen} onClose={onClose}>
+			<Modal isOpen={isOpen} onClose={onClose} >
 				<ModalOverlay />
-				<ModalContent>
+				<ModalContent maxWidth='90%'>
 					<ModalHeader>
             {modalTitle}
 					</ModalHeader>

@@ -1,31 +1,26 @@
 import { ChakraProvider } from '@chakra-ui/react'
+import {VStack, Box} from "@chakra-ui/react"
 
-import {h1} from '../../Content/appTitle'
-import {description} from '../../Content/appTitle'
 
-import {Home} from '../Home'
+
+import {Introduction} from '../Introduction'
+import {MainTitle} from '../MainTitle'
 import {Experience} from '../Experience'
 import {MyProjects} from '../MyProjects'
 import {Socials} from '../Socials'
 
 
-function App() {
-
-  //dev only remove*
-  // useEffect(()=> {
-  //   return ()=> console.log(`app is unmounting`, Date())
-  // }, [])
+const App = () => {
 
   return (
     <ChakraProvider>
-      <div>
-          <h1>{h1}</h1>
-          <p>{description}</p>
-          <Socials/>
-          <Home/>
-          <Experience/>
-          <MyProjects/>
-      </div>
+      <VStack>
+        <MainTitle/> 
+        <Socials/>
+        <Introduction/>
+        <Experience/>
+        <MyProjects/>
+      </VStack>
     </ChakraProvider>
   );
 }

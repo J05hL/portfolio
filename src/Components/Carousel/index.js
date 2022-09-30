@@ -51,9 +51,9 @@ const previousSlide = () => {
                   <p key={i}>{x}</p>
                 )}
 
-                <h4>
+                <p>
                   Tech we used
-                </h4>
+                </p>
 
                 {item.tech.map((x, i)=> 
                   <span key={i}>
@@ -65,7 +65,7 @@ const previousSlide = () => {
                       
                   </span>)}
 
-                  <h4>Have a closer look</h4>
+                  <p>Have a closer look</p>
                     {item.links.map((x, i)=>
                       <a 
                         key={i}

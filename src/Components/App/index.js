@@ -1,3 +1,4 @@
+import { ChakraProvider } from '@chakra-ui/react'
 
 import {h1} from '../../Content/appTitle'
 import {description} from '../../Content/appTitle'
@@ -16,16 +17,18 @@ function App() {
   // }, [])
 
   return (
-    <div>
-      <section>
-        <h1>{h1}</h1>
-        <p>{description}</p>
-        <Socials/>
-        <Home/>
-        <Experience/>
-        <MyProjects/>
-      </section>
-    </div>
+    <ChakraProvider>
+      <div>
+        <section>
+          <h1>{h1}</h1>
+          <p>{description}</p>
+          <Socials/>
+          <Home/>
+          <Experience/>
+          <MyProjects/>
+        </section>
+      </div>
+    </ChakraProvider>
   );
 }
 

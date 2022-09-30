@@ -1,3 +1,5 @@
+import {Flex, Spacer,  VStack, HStack, Wrap, WrapItem, Box, Grid, GridItem} from "@chakra-ui/react"
+
 import {
   xpTitle,
   xpText,
@@ -12,22 +14,56 @@ export const Experience = ()=> {
 
   return (   
     <section>
-        <h2>{xpTitle}</h2>
-
-
-      {xpText.map((item, index)=> 
-          <p key={index}>{item} </p> 
+      <Flex m={5} >
+        <VStack
+          spacing={3}
+          maxWidth='85%'
+        >
+          {xpText.map((item, index)=> 
+            <p key={index}>{item} </p> 
       )}
-
-      <h3>Tech I'm comfortable with</h3>
+        </VStack>
         
-        {tech.filter((x)=> x.comfortable).map((x, i)=> <span key={i}>
-              <img
-                src={x.image}
-                alt={x.name}
-              />
-              <p>{x.name}</p>
-              </span>)}
+        <Spacer/>
+
+        <Box 
+          fontSize="30px"
+          m={5}  
+        >
+          <h2>{xpTitle}</h2>
+        </Box>
+      </Flex>
+
+      <VStack>
+        <Box 
+          fontSize="30px"
+          m={5}  
+        >    
+          <h3>Tech I'm comfortable with</h3>
+        </Box>    
+        
+        <Wrap>
+          {tech.filter((x)=> x.comfortable).map((x, i)=> 
+            <WrapItem key={i} justify='center'>
+              <HStack 
+                spacing={3}
+                justify='center'
+              >
+                <img
+                  minWidth='100%'
+                  minHeight='100%'
+                  maxWidth='100%'
+                  width='100px'
+                  // maxHeight='20px'
+                  src={x.image}
+                  alt={x.name}
+                />
+                <p>{x.name}</p>
+              </HStack>
+            </WrapItem>)}
+        </Wrap>      
+
+      </VStack>
 
       <h4>Tech I'm exploring right now</h4>
     

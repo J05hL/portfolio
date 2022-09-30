@@ -19,14 +19,12 @@ function App() {
   return (
     <ChakraProvider>
       <div>
-        <section>
           <h1>{h1}</h1>
           <p>{description}</p>
           <Socials/>
           <Home/>
           <Experience/>
           <MyProjects/>
-        </section>
       </div>
     </ChakraProvider>
   );

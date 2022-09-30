@@ -1,5 +1,3 @@
-/** @jsxImportSource @emotion/react */
-import { css } from '@emotion/react'
 
 import {
   myProjectsTitle,
@@ -8,11 +6,6 @@ import {
 } from '../../Content/myProjects'
 
 import {Card} from '../Card'
-
-const style = css`
-  color: inherit; 
-  text-decoration: underline;
-`
 
 export const MyProjects = ()=> {
   return (
@@ -56,7 +49,6 @@ export const MyProjects = ()=> {
               <p>Have a closer look!</p>
                 {item.links.map((x, i)=>
                   <a 
-                    css={style}
                     key={i}
                     href={x.link} target="_blank" rel="noreferrer"
                   >

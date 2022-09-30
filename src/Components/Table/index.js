@@ -1,38 +1,15 @@
-/** @jsxImportSource @emotion/react */
-import { css } from '@emotion/react'
-
-const outerTableDiv = css`
-  display: flex;
-  justify-content: center;
-  color: #FAF9F6;
-  padding: 20px;
-`
-
-const table = css`
-  color: #FAF9F6;
-  background-color: #342e37;
-  padding: 5px;
-`
-
-const cell = css`
-color: #FAF9F6;
-background-color: #342e37;
-padding: 5px;
-border: 1px solid;
-`
 
 export const Table = ({array}) => {
 
    return (
-    <div css={outerTableDiv}>
+    <div >
       {array[0] ? 
-      <table css={table}>
+      <table >
         <thead>
           <tr>
             {Object.keys(array[0]).map((item, index) => 
               <th 
                 key={index}
-                css={cell}
               >
                 {item.toUpperCase()}
               </th>)}
@@ -47,7 +24,6 @@ export const Table = ({array}) => {
                 .map((x, i) => 
                   <td 
                     key={i}
-                    css={cell}
                   >{x}</td>)}
             </tr>)}
         </tbody>

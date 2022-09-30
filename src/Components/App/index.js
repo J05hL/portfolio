@@ -1,8 +1,3 @@
-/** @jsxImportSource @emotion/react */
-import { css } from '@emotion/react'
-
-  //dev only remove*
-  //import { useEffect } from 'react';
 
 import {h1} from '../../Content/appTitle'
 import {description} from '../../Content/appTitle'
@@ -21,8 +16,8 @@ function App() {
   // }, [])
 
   return (
-    <div css={null}>
-      <section css={null}>
+    <div>
+      <section>
         <h1>{h1}</h1>
         <p>{description}</p>
         <Socials/>

@@ -1,4 +1,13 @@
-import {Flex, Spacer,  VStack, HStack, Wrap, WrapItem, Box, Grid, GridItem} from "@chakra-ui/react"
+import {
+  Flex, 
+  Spacer,  
+  VStack, 
+  HStack, 
+  Wrap, 
+  WrapItem, 
+  Box, 
+  Center
+} from "@chakra-ui/react"
 
 import {
   xpTitle,
@@ -26,12 +35,13 @@ export const Experience = ()=> {
         
         <Spacer/>
 
-        <Box 
+        <Center 
           fontSize="30px"
+          width="100%"
           m={5}  
         >
           <h2>{xpTitle}</h2>
-        </Box>
+        </Center>
       </Flex>
 
       <VStack>
@@ -50,8 +60,8 @@ export const Experience = ()=> {
                 justify='center'
               >
                 <img
-                  minWidth='100%'
-                  minHeight='100%'
+                  // minWidth='100%'
+                  // minHeight='100%'
                   maxWidth='100%'
                   width='100px'
                   // maxHeight='20px'

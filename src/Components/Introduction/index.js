@@ -1,4 +1,4 @@
-import {Flex, Spacer,  VStack, Box} from "@chakra-ui/react"
+import {Flex, Spacer,  VStack, Center} from "@chakra-ui/react"
 
 import {
   homeTitle, 
@@ -8,12 +8,13 @@ export const Introduction = ()=> {
   return (
     <section>
       <Flex m={5} >
-        <Box 
+        <Center 
           fontSize="30px"
+          width="100%"
           m={5}  
-        >
+        >  
           <h2>{homeTitle}</h2>
-        </Box>
+        </Center>
 
         <Spacer/>
 

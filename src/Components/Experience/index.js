@@ -5,7 +5,6 @@ import {
   HStack, 
   Wrap, 
   WrapItem, 
-  Box, 
   Center
 } from "@chakra-ui/react"
 
@@ -17,7 +16,7 @@ import {
 
 import {tech} from '../../Content/tech.js'
 
-import { Table } from '../Table'
+import { ThisIsATable } from '../ThisIsATable'
 
 export const Experience = ()=> {
 
@@ -139,8 +138,9 @@ export const Experience = ()=> {
 
           <Center
             w="100%"
+            minW="50%"
           >
-            <Table array={xpHistory}/>
+            <ThisIsATable array={xpHistory}/>
           </Center>  
    
       </Flex>

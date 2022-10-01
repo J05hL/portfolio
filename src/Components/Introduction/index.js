@@ -20,7 +20,6 @@ export const Introduction = ()=> {
 
         <VStack
           spacing={3}
-          maxWidth='85%'
         >
           {homeText.map((item, index)=> 
             <p key={index}>{item}</p>)}

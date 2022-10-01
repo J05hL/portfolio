@@ -23,10 +23,10 @@ export const Experience = ()=> {
 
   return (   
     <section>
+    
       <Flex m={5} >
         <VStack
           spacing={3}
-          maxWidth='85%'
         >
           {xpText.map((item, index)=> 
             <p key={index}>{item} </p> 
@@ -44,53 +44,106 @@ export const Experience = ()=> {
         </Center>
       </Flex>
 
-      <VStack>
-        <Box 
-          fontSize="30px"
-          m={5}  
-        >    
-          <h3>Tech I'm comfortable with</h3>
-        </Box>    
-        
-        <Wrap>
-          {tech.filter((x)=> x.comfortable).map((x, i)=> 
-            <WrapItem key={i} justify='center'>
-              <HStack 
-                spacing={3}
-                justify='center'
+      <Flex m={5} >
+          <Center 
+            fontSize="30px"
+            width="100%"
+            m={5}  
+          >    
+            <h3>Tech I'm comfortable with</h3>
+          </Center>    
+          
+          <Spacer/>
+            
+          <Wrap
+            spacing='30px'
+            minW="50%"
+          >
+            {tech.filter((x)=> x.comfortable).map((x, i)=> 
+              <WrapItem 
+                key={i} 
               >
-                <img
-                  // minWidth='100%'
-                  // minHeight='100%'
-                  maxWidth='100%'
-                  width='100px'
-                  // maxHeight='20px'
-                  src={x.image}
-                  alt={x.name}
-                />
-                <p>{x.name}</p>
-              </HStack>
-            </WrapItem>)}
-        </Wrap>      
+                <Center 
+                  height="100%"
+                >
+                  <HStack 
+                    spacing={3}
+                    justify='center'
+                    width="160px"
+                  >
+                    <img
+                      width='50px'
+                      src={x.image}
+                      alt={x.name}
+                    />
+                    <p>{x.name}</p>
+                  </HStack>
+                </Center>
+              </WrapItem>)}
+          </Wrap>      
+      </Flex>
 
-      </VStack>
+      <Flex m={5} >
+            
+          <Wrap
+            spacing='30px'
+            minW="50%"
+          >
+            {tech.filter((x)=> !x.comfortable).map((x, i)=> 
+              <WrapItem 
+                key={i} 
+              >
+                <Center 
+                  height="100%"
+                >
+                  <HStack 
+                    spacing={3}
+                    justify='center'
+                    width="160px"
+                  >
+                    <img
+                      width='50px'
+                      src={x.image}
+                      alt={x.name}
+                    />
+                    <p>{x.name}</p>
+                  </HStack>
+                </Center>
+              </WrapItem>)}
+          </Wrap>
 
-      <h4>Tech I'm exploring right now</h4>
-    
-        
-        {tech.filter((x)=> !x.comfortable).map((x, i)=> <span key={i}>
-              <img
-                src={x.image}
-                alt={x.name}
-              />
-              <p>
-                text={x.name}
-              </p>
-              </span>)}
+          <Spacer/>
 
-      <h3>Employment History</h3>
+          <Center 
+            fontSize="30px"
+            width="100%"
+            m={5}  
+          >    
+            <h3>Tech I'm exploring right now</h3>
+          </Center>    
+          
+          
+                
+      </Flex>
 
-      <Table array={xpHistory}/>
+      <Flex m={5} >
+          <Center 
+            fontSize="30px"
+            minW="50%"
+            m={5}  
+          >    
+            <h3>Employment History</h3>
+          </Center>    
+          
+          <Spacer/>
+
+          <Center
+            w="100%"
+          >
+            <Table array={xpHistory}/>
+          </Center>  
+   
+      </Flex>
     </section>  
   )
 }

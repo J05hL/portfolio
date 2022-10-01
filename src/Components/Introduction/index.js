@@ -4,17 +4,16 @@ import {
   homeTitle, 
   homeText } from '../../Content/home';
 
+import {Title} from '../Title'
+
 export const Introduction = ()=> {
   return (
     <section>
       <Flex m={5} >
-        <Center 
-          fontSize="30px"
-          width="100%"
-          m={5}  
-        >  
-          <h2>{homeTitle}</h2>
-        </Center>
+        <Title 
+          title={homeTitle} 
+        />  
+        
 
         <Spacer/>
 

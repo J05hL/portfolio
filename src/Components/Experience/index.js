@@ -13,14 +13,15 @@ import {
   xpText,
   xpHistory
 } from '../../Content/xp'
-
 import {tech} from '../../Content/tech.js'
 
 import { TableFromArrayOfObjects } from '../TableFromArrayOfObjects'
+import {Title} from '../Title'
 
 export const Experience = ()=> {
 
-  return (   
+  return (
+    
     <section>
     
       <Flex m={5} >
@@ -34,23 +35,15 @@ export const Experience = ()=> {
         
         <Spacer/>
 
-        <Center 
-          fontSize="30px"
-          width="100%"
-          m={5}  
-        >
-          <h2>{xpTitle}</h2>
-        </Center>
+        <Title 
+          title={xpTitle} 
+        /> 
       </Flex>
 
       <Flex m={5} >
-          <Center 
-            fontSize="30px"
-            width="100%"
-            m={5}  
-          >    
-            <h3>Tech I'm comfortable with</h3>
-          </Center>    
+      <Title 
+          title="Tech I'm comfortable with" 
+        />    
           
           <Spacer/>
             
@@ -113,13 +106,9 @@ export const Experience = ()=> {
 
           <Spacer/>
 
-          <Center 
-            fontSize="30px"
-            width="100%"
-            m={5}  
-          >    
-            <h3>Tech I'm exploring right now</h3>
-          </Center>    
+          <Title 
+          title="Tech I'm exploring right now"
+        />    
           
           
                 

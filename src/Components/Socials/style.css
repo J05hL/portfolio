@@ -1,0 +1,29 @@
+.hidden {
+  display: none !important;
+}
+
+.whereToFindMeButton {
+  animation: stretch 5s;
+  animation-delay: 3s;
+  animation-iteration-count: 1;
+}
+
+.socials{
+  animation: stretch 5s;
+}
+
+@keyframes stretch {
+  0% {
+      transform: scale(.5);
+      background-color: black;
+  }
+
+  50% {
+      background-color: white;
+      transform: scale(1.5);
+  }
+
+  100% {
+      transform: scale(1);
+  }
+}

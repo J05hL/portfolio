@@ -16,7 +16,7 @@ import {
 
 import {tech} from '../../Content/tech.js'
 
-import { ThisIsATable } from '../ThisIsATable'
+import { TableFromArrayOfObjects } from '../TableFromArrayOfObjects'
 
 export const Experience = ()=> {
 
@@ -140,7 +140,7 @@ export const Experience = ()=> {
             w="100%"
             minW="50%"
           >
-            <ThisIsATable array={xpHistory}/>
+            <TableFromArrayOfObjects array={xpHistory}/>
           </Center>  
    
       </Flex>

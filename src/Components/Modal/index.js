@@ -1,6 +1,6 @@
 
 import { Button } from "@chakra-ui/react";
-//prettier-ignore
+
 import { Modal, ModalOverlay, ModalContent, ModalHeader, ModalFooter, ModalBody, ModalCloseButton, useDisclosure } from '@chakra-ui/react'
 
 export const EmptyModal = ({ buttonTitle, modalTitle, children }) => {

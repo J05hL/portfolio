@@ -2,15 +2,13 @@ import {
   Table,
   Thead,
   Tbody,
-  Tfoot,
   Tr,
   Th,
   Td,
-  TableCaption,
   TableContainer,
 } from '@chakra-ui/react'
 
-export const ThisIsATable = ({array}) => {
+export const TableFromArrayOfObjects = ({array}) => {
 
    return (
     <TableContainer >
@@ -56,12 +54,12 @@ export const ThisIsATable = ({array}) => {
             >
               {Object.values(item)
                 .map((x, i) => 
-                  <td 
+                  <Td 
                     key={i}
                     style={{
-                      border: "10px solid white"
+                      border: "5px solid white"
                     }}
-                  >{x}</td>)}
+                  >{x}</Td>)}
             </Tr>)}
         </Tbody>
         
